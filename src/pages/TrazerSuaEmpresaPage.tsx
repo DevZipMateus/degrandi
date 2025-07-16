@@ -7,7 +7,7 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import AnimatedSection from '@/components/AnimatedSection';
 import ContactForm from '@/components/ContactForm';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, Building2, CheckCircle } from 'lucide-react';
+import { ArrowLeft, Building2 } from 'lucide-react';
 import {
   Accordion,
   AccordionContent,
@@ -121,71 +121,71 @@ const TrazerSuaEmpresaPage = () => {
           </div>
         </section>
 
-        {/* Contact Form */}
+        {/* Contact Form and FAQ Side by Side */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <AnimatedSection animation="fade-in-up" className="max-w-4xl mx-auto">
-              <ContactForm />
-            </AnimatedSection>
-          </div>
-        </section>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+              {/* Contact Form */}
+              <AnimatedSection animation="fade-in-up" className="order-2 lg:order-1">
+                <h3 className="text-2xl font-bold mb-6 text-center lg:text-left">Entre em Contato</h3>
+                <ContactForm />
+              </AnimatedSection>
 
-        {/* FAQ Section */}
-        <section className="py-16 bg-muted/50">
-          <div className="container mx-auto px-4">
-            <AnimatedSection animation="fade-in-up" className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-12">Perguntas Frequentes</h2>
-              <Accordion type="single" collapsible className="w-full">
-                <AccordionItem value="item-1">
-                  <AccordionTrigger>Como faço para migrar minha empresa?</AccordionTrigger>
-                  <AccordionContent>
-                    É só você preencher o formulário de contato com as informações e enviar o número do seu CNPJ, entraremos em contato com você. Ou utilize nossos contatos: WhatsApp, E-mail ou Telefone.
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-2">
-                  <AccordionTrigger>Quanto tempo leva o processo de migração de contabilidade?</AccordionTrigger>
-                  <AccordionContent>
-                    O processo de migração é muito rápido e pode ser feito em qualquer momento do mês. O processo completo leva de 10 a 20 dias. Posteriormente entraremos em contato com o outro contador e solicitaremos o envio das informações/documentos.
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-3">
-                  <AccordionTrigger>É preciso ter ou adquirir certificado digital para utilizar os serviços?</AccordionTrigger>
-                  <AccordionContent>
-                    Para as empresas prestadoras de serviços enquadradas no Simples Nacional, que não possuem funcionários, não é necessário o uso do certificado digital. Para demais empresas é necessário do certificado digital e-CNPJ A1.
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-4">
-                  <AccordionTrigger>O que preciso fazer durante o mês?</AccordionTrigger>
-                  <AccordionContent>
-                    Enviar a movimentação financeira da sua empresa, extratos bancários, XML das notas fiscais de entrada e saída e dados dos funcionários se houver. Fique tranquilo(a), possuímos ferramentas para agilizar e facilitar esse envio.
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-5">
-                  <AccordionTrigger>Tenho funcionários. Vocês fazem a folha de pagamento?</AccordionTrigger>
-                  <AccordionContent>
-                    Sim, entre em contato conosco para elaborarmos um plano personalizado.
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-6">
-                  <AccordionTrigger>Qual prazo que tenho para cancelar o contrato de prestação de serviços contábil?</AccordionTrigger>
-                  <AccordionContent>
-                    O prazo para cancelamento dos serviços contábeis é 60 dias após a contratação dos serviços, sem multa de rescisão do contrato. Para cancelar é necessário enviar a solicitação de cancelamento, por e-mail, com no mínimo 30 dias de antecedência.
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-7">
-                  <AccordionTrigger>Posso solicitar reunião com o Contador da minha Empresa?</AccordionTrigger>
-                  <AccordionContent>
-                    Sim, para agendar reunião entre em contato pelos nossos canais de atendimento, Telefone, WhatsApp, e E-mail, e agende sua reunião.
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-8">
-                  <AccordionTrigger>Quero abrir uma Empresa, mas estou com dúvidas, o que devo fazer?</AccordionTrigger>
-                  <AccordionContent>
-                    Acesse a nossa página Abrir Empresa para saber mais. Nossa equipe entrará em contato com você e fará as orientações e, caso seja de sua preferência, podemos agendar uma reunião.
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
-            </AnimatedSection>
+              {/* FAQ Section */}
+              <AnimatedSection animation="fade-in-up" className="order-1 lg:order-2">
+                <h3 className="text-2xl font-bold mb-6 text-center lg:text-left">Perguntas Frequentes</h3>
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="item-1">
+                    <AccordionTrigger>Como faço para migrar minha empresa?</AccordionTrigger>
+                    <AccordionContent>
+                      É só você preencher o formulário de contato com as informações e enviar o número do seu CNPJ, entraremos em contato com você. Ou utilize nossos contatos: WhatsApp, E-mail ou Telefone.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-2">
+                    <AccordionTrigger>Quanto tempo leva o processo de migração de contabilidade?</AccordionTrigger>
+                    <AccordionContent>
+                      O processo de migração é muito rápido e pode ser feito em qualquer momento do mês. O processo completo leva de 10 a 20 dias. Posteriormente entraremos em contato com o outro contador e solicitaremos o envio das informações/documentos.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-3">
+                    <AccordionTrigger>É preciso ter ou adquirir certificado digital para utilizar os serviços?</AccordionTrigger>
+                    <AccordionContent>
+                      Para as empresas prestadoras de serviços enquadradas no Simples Nacional, que não possuem funcionários, não é necessário o uso do certificado digital. Para demais empresas é necessário do certificado digital e-CNPJ A1.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-4">
+                    <AccordionTrigger>O que preciso fazer durante o mês?</AccordionTrigger>
+                    <AccordionContent>
+                      Enviar a movimentação financeira da sua empresa, extratos bancários, XML das notas fiscais de entrada e saída e dados dos funcionários se houver. Fique tranquilo(a), possuímos ferramentas para agilizar e facilitar esse envio.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-5">
+                    <AccordionTrigger>Tenho funcionários. Vocês fazem a folha de pagamento?</AccordionTrigger>
+                    <AccordionContent>
+                      Sim, entre em contato conosco para elaborarmos um plano personalizado.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-6">
+                    <AccordionTrigger>Qual prazo que tenho para cancelar o contrato de prestação de serviços contábil?</AccordionTrigger>
+                    <AccordionContent>
+                      O prazo para cancelamento dos serviços contábeis é 60 dias após a contratação dos serviços, sem multa de rescisão do contrato. Para cancelar é necessário enviar a solicitação de cancelamento, por e-mail, com no mínimo 30 dias de antecedência.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-7">
+                    <AccordionTrigger>Posso solicitar reunião com o Contador da minha Empresa?</AccordionTrigger>
+                    <AccordionContent>
+                      Sim, para agendar reunião entre em contato pelos nossos canais de atendimento, Telefone, WhatsApp, e E-mail, e agende sua reunião.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-8">
+                    <AccordionTrigger>Quero abrir uma Empresa, mas estou com dúvidas, o que devo fazer?</AccordionTrigger>
+                    <AccordionContent>
+                      Acesse a nossa página Abrir Empresa para saber mais. Nossa equipe entrará em contato com você e fará as orientações e, caso seja de sua preferência, podemos agendar uma reunião.
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </AnimatedSection>
+            </div>
           </div>
         </section>
 
