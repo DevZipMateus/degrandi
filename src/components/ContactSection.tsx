@@ -1,6 +1,7 @@
+
 import AnimatedSection from './AnimatedSection';
-import LocationMap from './LocationMap';
 import { MapPin, Phone, Mail, Send } from 'lucide-react';
+
 const ContactSection = () => {
   return <>
       {/* Location Section */}
@@ -47,10 +48,19 @@ const ContactSection = () => {
                     </div>
                   </div>
 
-                  {/* Map for Viadutos */}
+                  {/* Google Maps for Viadutos */}
                   <div className="mt-6">
-                    <LocationMap address="Av. Independência - n° 377, Centro, Viadutos/RS" coordinates={[-52.0136, -27.8954]} // Approximate coordinates for Viadutos/RS
-                  className="h-48 w-full" />
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.0!2d-52.0211366!3d-27.5723646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDM0JzIwLjUiUyA1MsKwMDEnMTYuMSJX!5e0!3m2!1spt-BR!2sbr!4v1640995200000!5m2!1spt-BR!2sbr"
+                      width="100%"
+                      height="192"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      className="w-full h-48 rounded-lg"
+                      title="Mapa de Viadutos/RS"
+                    />
                   </div>
                 </div>
               </div>
@@ -87,17 +97,6 @@ const ContactSection = () => {
                         (54) 98424-7020
                       </p>
                     </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-4">
-                    
-                    
-                  </div>
-
-                  {/* Map for Gaurama */}
-                  <div className="mt-6">
-                    <LocationMap address="Rua João Amândio Sperb - nº 229, Centro, Gaurama/RS" coordinates={[-52.1297, -27.5814]} // Approximate coordinates for Gaurama/RS
-                  className="h-48 w-full" />
                   </div>
                 </div>
               </div>
@@ -159,4 +158,5 @@ const ContactSection = () => {
       </section>
     </>;
 };
+
 export default ContactSection;
