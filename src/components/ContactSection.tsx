@@ -1,10 +1,8 @@
 import AnimatedSection from './AnimatedSection';
 import LocationMap from './LocationMap';
 import { MapPin, Phone, Mail, Send } from 'lucide-react';
-
 const ContactSection = () => {
-  return (
-    <>
+  return <>
       {/* Location Section */}
       <section id="localizacao" className="py-24 bg-gray-50">
         <div className="section-container">
@@ -51,11 +49,8 @@ const ContactSection = () => {
 
                   {/* Map for Viadutos */}
                   <div className="mt-6">
-                    <LocationMap 
-                      address="Av. Independência - n° 377, Centro, Viadutos/RS"
-                      coordinates={[-52.0136, -27.8954]} // Approximate coordinates for Viadutos/RS
-                      className="h-48 w-full"
-                    />
+                    <LocationMap address="Av. Independência - n° 377, Centro, Viadutos/RS" coordinates={[-52.0136, -27.8954]} // Approximate coordinates for Viadutos/RS
+                  className="h-48 w-full" />
                   </div>
                 </div>
               </div>
@@ -95,22 +90,14 @@ const ContactSection = () => {
                   </div>
                   
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <Mail className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">E-mail</h4>
-                      <p className="text-gray-600">escritoriodegrandi@gmail.com</p>
-                    </div>
+                    
+                    
                   </div>
 
                   {/* Map for Gaurama */}
                   <div className="mt-6">
-                    <LocationMap 
-                      address="Rua João Amândio Sperb - nº 229, Centro, Gaurama/RS"
-                      coordinates={[-52.1297, -27.5814]} // Approximate coordinates for Gaurama/RS
-                      className="h-48 w-full"
-                    />
+                    <LocationMap address="Rua João Amândio Sperb - nº 229, Centro, Gaurama/RS" coordinates={[-52.1297, -27.5814]} // Approximate coordinates for Gaurama/RS
+                  className="h-48 w-full" />
                   </div>
                 </div>
               </div>
@@ -136,59 +123,31 @@ const ContactSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Nome</label>
-                    <input 
-                      type="text" 
-                      id="name" 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-primary focus:border-primary"
-                      placeholder="Seu nome completo" 
-                    />
+                    <input type="text" id="name" className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-primary focus:border-primary" placeholder="Seu nome completo" />
                   </div>
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">E-mail</label>
-                    <input 
-                      type="email" 
-                      id="email" 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-primary focus:border-primary"
-                      placeholder="seu@email.com" 
-                    />
+                    <input type="email" id="email" className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-primary focus:border-primary" placeholder="seu@email.com" />
                   </div>
                 </div>
                 
                 <div>
                   <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">Empresa</label>
-                  <input 
-                    type="text" 
-                    id="company" 
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-primary focus:border-primary"
-                    placeholder="Nome da sua empresa" 
-                  />
+                  <input type="text" id="company" className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-primary focus:border-primary" placeholder="Nome da sua empresa" />
                 </div>
                 
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Telefone</label>
-                  <input 
-                    type="tel" 
-                    id="phone" 
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-primary focus:border-primary"
-                    placeholder="(xx) xxxxx-xxxx" 
-                  />
+                  <input type="tel" id="phone" className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-primary focus:border-primary" placeholder="(xx) xxxxx-xxxx" />
                 </div>
                 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Mensagem</label>
-                  <textarea 
-                    id="message" 
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-primary focus:border-primary"
-                    placeholder="Como podemos ajudar?" 
-                    rows={4}
-                  ></textarea>
+                  <textarea id="message" className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-primary focus:border-primary" placeholder="Como podemos ajudar?" rows={4}></textarea>
                 </div>
                 
                 <div className="text-center">
-                  <button 
-                    type="submit" 
-                    className="w-full md:w-auto btn-primary text-lg py-4 px-8 flex items-center justify-center gap-2"
-                  >
+                  <button type="submit" className="w-full md:w-auto btn-primary text-lg py-4 px-8 flex items-center justify-center gap-2">
                     <Send className="h-5 w-5" />
                     Enviar Mensagem
                   </button>
@@ -198,8 +157,6 @@ const ContactSection = () => {
           </AnimatedSection>
         </div>
       </section>
-    </>
-  );
+    </>;
 };
-
 export default ContactSection;
