@@ -35,7 +35,7 @@ const Header = () => {
           <img 
             alt="Escritório Contábil De Grandi" 
             className="h-12 md:h-14" 
-            src="/lovable-uploads/d23a9dcf-257f-4b04-a3e6-2dc5a316722b.png" 
+            src="/lovable-uploads/c2cc8633-a51b-4fe0-b8d0-338ec56dd30b.png" 
           />
         </a>
 
