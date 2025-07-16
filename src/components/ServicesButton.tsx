@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const ServicesButton = () => {
   return (
-    <section className="py-16 md:py-20 bg-gray-50">
+    <section className="py-16 md:py-20">
       <div className="section-container">
         <AnimatedSection>
           <div className="text-center">

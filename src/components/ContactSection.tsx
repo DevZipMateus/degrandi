@@ -1,10 +1,11 @@
+
 import AnimatedSection from './AnimatedSection';
 import { MapPin, Phone, Mail, Send } from 'lucide-react';
 
 const ContactSection = () => {
   return <>
       {/* Location Section */}
-      <section id="localizacao" className="py-24 bg-gray-50">
+      <section id="localizacao" className="py-24">
         <div className="section-container">
           <AnimatedSection>
             <h2 className="section-title">Nossa Localização</h2>
@@ -120,7 +121,7 @@ const ContactSection = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section id="contato" className="py-24 bg-white">
+      <section id="contato" className="py-24">
         <div className="section-container">
           <AnimatedSection className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
