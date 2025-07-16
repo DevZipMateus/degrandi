@@ -27,8 +27,8 @@ const CTAButtons = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-secondary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Link>
 
-            <a 
-              href="#contato" 
+            <Link 
+              to="/trazer-sua-empresa" 
               className="group relative overflow-hidden bg-secondary hover:bg-secondary/90 text-white rounded-xl p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 block"
             >
               <div className="flex items-center justify-center gap-4 mb-4">
@@ -43,7 +43,7 @@ const CTAButtons = () => {
                 Já possui empresa e precisa de serviços contábeis? Fale conosco para uma consultoria.
               </p>
               <div className="absolute inset-0 bg-gradient-to-r from-secondary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </a>
+            </Link>
           </div>
         </AnimatedSection>
       </div>
