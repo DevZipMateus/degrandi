@@ -1,24 +1,16 @@
-
 import AnimatedSection from './AnimatedSection';
 import { ChevronRight, Calculator, FileText, Users } from 'lucide-react';
-
 const HeroSection = () => {
-  return (
-    <section 
-      id="inicio" 
-      className="relative min-h-screen flex items-center bg-gradient-to-br from-blue-50 to-white overflow-hidden pt-20"
-    >
+  return <section id="inicio" className="relative min-h-screen flex items-center bg-gradient-to-br from-blue-50 to-white overflow-hidden pt-20">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute right-0 top-0 w-1/2 h-full bg-primary/5 clip-path-polygon"></div>
-        <div 
-          className="absolute -right-40 -top-40 w-96 h-96 rounded-full bg-primary/10"
-          style={{ filter: "blur(60px)" }}  
-        ></div>
-        <div 
-          className="absolute -left-20 bottom-1/4 w-72 h-72 rounded-full bg-primary/10"
-          style={{ filter: "blur(60px)" }}  
-        ></div>
+        <div className="absolute -right-40 -top-40 w-96 h-96 rounded-full bg-primary/10" style={{
+        filter: "blur(60px)"
+      }}></div>
+        <div className="absolute -left-20 bottom-1/4 w-72 h-72 rounded-full bg-primary/10" style={{
+        filter: "blur(60px)"
+      }}></div>
       </div>
 
       <div className="container mx-auto px-4 z-10">
@@ -81,19 +73,13 @@ const HeroSection = () => {
             <div className="relative">
               <div className="absolute -top-12 -left-12 w-64 h-64 bg-primary/20 rounded-full filter blur-3xl"></div>
               <div className="relative z-10">
-                <img 
-                  src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1000" 
-                  alt="Escritório contábil moderno e profissional" 
-                  className="rounded-2xl shadow-xl w-full object-cover"
-                />
+                <img alt="Escritório contábil moderno e profissional" className="rounded-2xl shadow-xl w-full object-cover" src="/lovable-uploads/d25da03d-5afa-40a5-8a57-918146997680.jpg" />
               </div>
               <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-primary/20 rounded-full filter blur-3xl"></div>
             </div>
           </AnimatedSection>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
