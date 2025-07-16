@@ -3,14 +3,11 @@ import { useEffect } from 'react';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
-import ProblemsSection from '@/components/ProblemsSection';
-import SolutionsSection from '@/components/SolutionsSection';
-import MethodologySection from '@/components/MethodologySection';
 import ServicesSection from '@/components/ServicesSection';
-import ResultsSection from '@/components/ResultsSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
-import EgestorERP from '@/components/EgestorERP';
+import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const Index = () => {
   useEffect(() => {
@@ -32,24 +29,26 @@ const Index = () => {
       });
     });
 
-    // Adicionar tag de Schema.org para SEO
+    // Schema.org for SEO
     const schema = {
       '@context': 'https://schema.org',
       '@type': 'Organization',
-      'name': 'Improve Contabilidade e BPO Financeiro',
-      'description': 'A Improve não entrega relatórios. Entregamos clareza, lucro e decisão com segurança. Menos caos. Mais resultados.',
-      'url': 'https://www.improve.com.br',
-      'logo': 'https://www.improve.com.br/logo.png',
+      'name': 'Escritório Contábil De Grandi Ltda',
+      'description': 'Escritório de contabilidade em Gaurama/RS oferecendo serviços contábeis completos para empresas e pessoas físicas.',
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': 'Rua João Amândio Sperb, 229, Sala 106',
+        'addressLocality': 'Gaurama',
+        'addressRegion': 'RS',
+        'addressCountry': 'BR'
+      },
       'contactPoint': {
         '@type': 'ContactPoint',
-        'telephone': '+55-51-99765-2696',
+        'telephone': '+55-54-3391-1010',
         'contactType': 'customer service',
         'areaServed': 'BR',
         'availableLanguage': 'Portuguese'
-      },
-      'sameAs': [
-        'https://www.instagram.com/improve.ce/'
-      ]
+      }
     };
 
     const scriptElement = document.createElement('script');
@@ -65,7 +64,9 @@ const Index = () => {
         });
       });
       
-      document.head.removeChild(scriptElement);
+      if (document.head.contains(scriptElement)) {
+        document.head.removeChild(scriptElement);
+      }
     };
   }, []);
 
@@ -75,15 +76,12 @@ const Index = () => {
       <main className="flex-grow pt-0">
         <HeroSection />
         <AboutSection />
-        <ProblemsSection />
-        <SolutionsSection />
-        <MethodologySection />
         <ServicesSection />
-        <ResultsSection />
         <TestimonialsSection />
-        <EgestorERP />
+        <ContactSection />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
