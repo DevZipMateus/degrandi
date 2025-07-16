@@ -1,6 +1,6 @@
-
 import AnimatedSection from './AnimatedSection';
-import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
+import LocationMap from './LocationMap';
+import { MapPin, Phone, Mail, Send } from 'lucide-react';
 
 const ContactSection = () => {
   return (
@@ -48,18 +48,14 @@ const ContactSection = () => {
                       </p>
                     </div>
                   </div>
-                  
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <Clock className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">Horário de Funcionamento</h4>
-                      <p className="text-gray-600">
-                        Segunda a Sexta: 8h às 18h<br />
-                        Sábado: 8h às 12h
-                      </p>
-                    </div>
+
+                  {/* Map for Viadutos */}
+                  <div className="mt-6">
+                    <LocationMap 
+                      address="Av. Independência - n° 377, Centro, Viadutos/RS"
+                      coordinates={[-52.0136, -27.8954]} // Approximate coordinates for Viadutos/RS
+                      className="h-48 w-full"
+                    />
                   </div>
                 </div>
               </div>
@@ -107,18 +103,14 @@ const ContactSection = () => {
                       <p className="text-gray-600">escritoriodegrandi@gmail.com</p>
                     </div>
                   </div>
-                  
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <Clock className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">Horário de Funcionamento</h4>
-                      <p className="text-gray-600">
-                        Segunda a Sexta: 8h às 18h<br />
-                        Sábado: 8h às 12h
-                      </p>
-                    </div>
+
+                  {/* Map for Gaurama */}
+                  <div className="mt-6">
+                    <LocationMap 
+                      address="Rua João Amândio Sperb - nº 229, Centro, Gaurama/RS"
+                      coordinates={[-52.1297, -27.5814]} // Approximate coordinates for Gaurama/RS
+                      className="h-48 w-full"
+                    />
                   </div>
                 </div>
               </div>
