@@ -4,19 +4,15 @@ import { cn } from '@/lib/utils';
 
 interface PlanCardProps {
   title: string;
-  price: string;
   description: string;
   features: string[];
-  isPopular?: boolean;
   className?: string;
 }
 
 const PlanCard = ({ 
   title, 
-  price, 
   description, 
   features, 
-  isPopular = false,
   className 
 }: PlanCardProps) => {
   const phoneNumber = "5433911010";
@@ -29,24 +25,12 @@ const PlanCard = ({
 
   return (
     <div className={cn(
-      "glass-card rounded-xl overflow-hidden transition-all duration-300",
-      isPopular ? "border-primary/50 shadow-lg ring-1 ring-primary/20" : "border-gray-100",
+      "glass-card rounded-xl overflow-hidden transition-all duration-300 border-gray-100",
       className
     )}>
-      {isPopular && (
-        <div className="bg-primary text-white text-center py-2 text-sm font-medium">
-          Mais Popular
-        </div>
-      )}
-      
       <div className="p-6 sm:p-8">
         <h3 className="text-xl font-bold">{title}</h3>
         <p className="text-gray-600 mt-2">{description}</p>
-        
-        <div className="mt-5">
-          <span className="text-3xl font-bold">{price}</span>
-          {price !== "Consulte" && <span className="text-gray-500 ml-1">/mês</span>}
-        </div>
         
         <ul className="mt-6 space-y-4">
           {features.map((feature) => (
@@ -61,12 +45,7 @@ const PlanCard = ({
         
         <button
           onClick={handleWhatsAppClick}
-          className={cn(
-            "mt-8 w-full block text-center py-3 rounded-md font-medium transition-colors",
-            isPopular 
-              ? "bg-primary text-white hover:bg-primary/90" 
-              : "bg-white text-primary border border-gray-200 hover:bg-gray-50"
-          )}
+          className="mt-8 w-full block text-center py-3 rounded-md font-medium transition-colors bg-primary text-white hover:bg-primary/90"
         >
           Solicitar Orçamento
         </button>

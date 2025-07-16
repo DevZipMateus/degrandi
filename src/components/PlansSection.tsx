@@ -5,18 +5,15 @@ import AnimatedSection from './AnimatedSection';
 const PlansSection = () => {
   const plans = [{
     title: "Contabilidade Rural",
-    price: "Consulte",
     description: "Especializado em atividades rurais e agronegócio",
     features: [
       "Contabilidade especializada rural", 
       "Gestão de impostos rurais", 
       "Controle de safras e produção", 
       "Declarações específicas do setor"
-    ],
-    isPopular: false
+    ]
   }, {
     title: "Micro e Pequenas Empresas",
-    price: "Consulte",
     description: "Soluções completas para pequenos negócios",
     features: [
       "Contabilidade completa", 
@@ -24,11 +21,9 @@ const PlansSection = () => {
       "Folha de pagamento", 
       "Suporte especializado", 
       "Relatórios mensais"
-    ],
-    isPopular: true
+    ]
   }, {
     title: "Profissional Liberal",
-    price: "Consulte",
     description: "Para profissionais autônomos e liberais",
     features: [
       "Controle financeiro personalizado", 
@@ -36,8 +31,7 @@ const PlansSection = () => {
       "Declaração de renda", 
       "Consultoria tributária", 
       "Atendimento personalizado"
-    ],
-    isPopular: false
+    ]
   }];
 
   return (
@@ -55,10 +49,8 @@ const PlansSection = () => {
             <AnimatedSection key={plan.title} animation="fade-in-up" delay={index * 150}>
               <PlanCard 
                 title={plan.title} 
-                price={plan.price} 
                 description={plan.description} 
                 features={plan.features} 
-                isPopular={plan.isPopular} 
               />
             </AnimatedSection>
           ))}
