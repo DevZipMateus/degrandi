@@ -1,3 +1,4 @@
+
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 const Footer = () => {
@@ -10,7 +11,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/c2cc8633-a51b-4fe0-b8d0-338ec56dd30b.png" 
               alt="Escritório Contábil De Grandi" 
-              className="h-18 mb-4 brightness-0 invert"
+              className="h-16 mb-4 brightness-0 invert"
             />
             <p className="text-gray-300 mb-4 max-w-md">
               Escritório de contabilidade oferecendo serviços contábeis completos 
