@@ -8,17 +8,17 @@ const HeroSection = () => {
       id="inicio" 
       className="relative min-h-screen flex items-center overflow-hidden pt-20"
       style={{
-        background: 'linear-gradient(135deg, hsl(220, 75%, 50%) 0%, #5897fc 100%)'
+        background: 'linear-gradient(135deg, hsl(220, 75%, 55%) 0%, hsl(220, 85%, 60%) 35%, hsl(220, 90%, 62%) 65%, #5897fc 100%)'
       }}
     >
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute right-0 top-0 w-1/2 h-full bg-white/5 clip-path-polygon"></div>
-        <div className="absolute -right-40 -top-40 w-96 h-96 rounded-full bg-white/10" style={{
-          filter: "blur(60px)"
+        <div className="absolute right-0 top-0 w-1/2 h-full bg-white/3 clip-path-polygon"></div>
+        <div className="absolute -right-40 -top-40 w-96 h-96 rounded-full bg-white/8" style={{
+          filter: "blur(80px)"
         }}></div>
-        <div className="absolute -left-20 bottom-1/4 w-72 h-72 rounded-full bg-white/10" style={{
-          filter: "blur(60px)"
+        <div className="absolute -left-20 bottom-1/4 w-72 h-72 rounded-full bg-white/8" style={{
+          filter: "blur(80px)"
         }}></div>
       </div>
 
