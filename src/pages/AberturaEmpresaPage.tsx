@@ -1,13 +1,17 @@
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import AnimatedSection from '@/components/AnimatedSection';
 import ContactForm from '@/components/ContactForm';
+import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Building2, FileText, Users, CheckCircle, Pencil } from 'lucide-react';
+import { Building2, FileText, Users, CheckCircle, Pencil, ArrowLeft } from 'lucide-react';
 
 const AberturaEmpresaPage = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     // Schema.org for SEO
     const schema = {
@@ -29,6 +33,10 @@ const AberturaEmpresaPage = () => {
       }
     };
   }, []);
+
+  const handleGoBack = () => {
+    navigate(-1);
+  };
 
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
@@ -312,6 +320,22 @@ const AberturaEmpresaPage = () => {
                 Preencha o formulário abaixo e nossa equipe especializada entrará em contato para dar início ao processo de abertura da sua empresa.
               </p>
               <ContactForm />
+            </AnimatedSection>
+          </div>
+        </section>
+
+        {/* Back Button Section */}
+        <section className="py-8 bg-background">
+          <div className="container mx-auto px-4">
+            <AnimatedSection animation="fade-in-up" className="text-center">
+              <Button 
+                onClick={handleGoBack}
+                variant="outline"
+                className="inline-flex items-center gap-2"
+              >
+                <ArrowLeft className="h-4 w-4" />
+                Voltar
+              </Button>
             </AnimatedSection>
           </div>
         </section>
