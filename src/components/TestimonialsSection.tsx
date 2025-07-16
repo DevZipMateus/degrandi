@@ -25,7 +25,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section id="depoimentos" className="py-24 bg-white">
+    <section id="depoimentos" className="py-24" style={{ background: 'hsl(var(--section-bg))' }}>
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title">Depoimentos</h2>

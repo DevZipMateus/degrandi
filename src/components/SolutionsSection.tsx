@@ -32,7 +32,7 @@ const SolutionsSection = () => {
   ];
 
   return (
-    <section id="solucoes" className="py-24 bg-white">
+    <section id="solucoes" className="py-24" style={{ background: 'hsl(var(--section-bg))' }}>
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title">Mais que relatórios. Entregamos resultados.</h2>
