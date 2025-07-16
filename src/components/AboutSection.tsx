@@ -1,12 +1,15 @@
+
 import { CheckCircle, Award, Clock, Shield } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
+
 const AboutSection = () => {
-  return <section id="sobre" className="py-24 bg-white">
+  return (
+    <section id="sobre" className="py-24 bg-white">
       <div className="section-container">
         <AnimatedSection>
-          <h2 className="section-title">Sobre o Escritório De Grandi</h2>
+          <h2 className="section-title">Sobre Nós</h2>
           <p className="section-subtitle">
-            Tradição e excelência em serviços contábeis em Gaurama/RS
+            Vasta experiência em serviços contábeis e imobiliários na Região Norte do RS
           </p>
         </AnimatedSection>
 
@@ -15,21 +18,38 @@ const AboutSection = () => {
             <div className="relative">
               <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/10 rounded-full z-0"></div>
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl">
-                <img alt="Equipe do Escritório Contábil De Grandi" className="w-full h-auto" src="https://i.pinimg.com/1200x/80/eb/5a/80eb5aa736bff707aad224866c98880e.jpg" />
+                <img 
+                  alt="Equipe do Escritório Contábil De Grandi" 
+                  className="w-full h-auto" 
+                  src="https://i.pinimg.com/1200x/80/eb/5a/80eb5aa736bff707aad224866c98880e.jpg" 
+                />
               </div>
             </div>
           </AnimatedSection>
           
-          <AnimatedSection animation="fade-in-up" className="space-y-6">
-            <p className="text-lg text-gray-700">
-              O Escritório Contábil De Grandi é uma empresa consolidada no mercado de Gaurama e região, 
-              oferecendo serviços contábeis de alta qualidade para empresas de todos os portes.
-            </p>
-            
-            <p className="text-lg text-gray-700">
-              Nossa missão é fornecer soluções contábeis completas e personalizadas, 
-              garantindo que nossos clientes tenham total segurança e tranquilidade em suas obrigações fiscais e contábeis.
-            </p>
+          <AnimatedSection animation="fade-in-up" className="space-y-8">
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">Sobre Nós</h3>
+                <p className="text-lg text-gray-700">
+                  O Escritório De Grandi possui vasta experiência em serviços contábeis e na área de compra e venda de imóveis, sendo pioneiro em diversos segmentos de prestação de serviço ao cliente. Conta atualmente com atendimento na cidade de Viadutos/RS e também na cidade de Gaurama/RS, proporcionando aos clientes maior comodidade e acesso aos serviços oferecidos.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">Atuação</h3>
+                <p className="text-lg text-gray-700">
+                  Atuamos principalmente na prestação de serviços para a população dos municípios da Região Norte do Estado do Rio Grande do Sul. Nossa equipe é treinada e qualificada, contando com profissionais formados nas áreas Contábil, de Administração de Empresas, Corretor de Imóveis e Avaliador Federal de Imóveis, possuímos excelente consultoria e dispomos de diversos meios de informação sobre rotinas Contábeis, Trabalhistas e Tributárias.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">Diferencial</h3>
+                <p className="text-lg text-gray-700">
+                  Qualidade nos serviços prestados e responsabilidade sempre foram nosso diferencial, além de uma vasta gama de serviços que prestamos aos nossos clientes, visando sempre a satisfação e resolutividade dos problemas que afetam as pessoas e as empresas no dia a dia.
+                </p>
+              </div>
+            </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
               <div className="flex items-start gap-3">
@@ -37,8 +57,8 @@ const AboutSection = () => {
                   <Award className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-2">Experiência</h3>
-                  <p className="text-gray-600">Mais de 20 anos no mercado contábil</p>
+                  <h3 className="text-lg font-semibold mb-2">Nosso Negócio</h3>
+                  <p className="text-gray-600">Prestar serviços confiáveis com qualidade, seriedade e segurança</p>
                 </div>
               </div>
               
@@ -47,8 +67,8 @@ const AboutSection = () => {
                   <Shield className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-2">Confiança</h3>
-                  <p className="text-gray-600">Centenas de clientes satisfeitos</p>
+                  <h3 className="text-lg font-semibold mb-2">Nossa Missão</h3>
+                  <p className="text-gray-600">Garantir os melhores serviços e soluções com conhecimento e tecnologia</p>
                 </div>
               </div>
               
@@ -57,8 +77,8 @@ const AboutSection = () => {
                   <Clock className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-2">Agilidade</h3>
-                  <p className="text-gray-600">Prazos sempre cumpridos</p>
+                  <h3 className="text-lg font-semibold mb-2">Nossos Princípios</h3>
+                  <p className="text-gray-600">Confiança, qualidade, inovação e relacionamentos duradouros</p>
                 </div>
               </div>
               
@@ -67,14 +87,16 @@ const AboutSection = () => {
                   <CheckCircle className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-2">Qualidade</h3>
-                  <p className="text-gray-600">Serviços certificados e precisos</p>
+                  <h3 className="text-lg font-semibold mb-2">Nossa Visão</h3>
+                  <p className="text-gray-600">Crescer junto com nossos clientes e com toda a comunidade</p>
                 </div>
               </div>
             </div>
           </AnimatedSection>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default AboutSection;
