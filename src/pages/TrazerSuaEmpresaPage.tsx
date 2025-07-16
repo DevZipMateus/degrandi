@@ -5,8 +5,9 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import AnimatedSection from '@/components/AnimatedSection';
+import ContactForm from '@/components/ContactForm';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, Building2, CheckCircle, Users, Clock, FileText } from 'lucide-react';
+import { ArrowLeft, Building2, CheckCircle } from 'lucide-react';
 import {
   Accordion,
   AccordionContent,
@@ -18,23 +19,16 @@ const TrazerSuaEmpresaPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = 'Trazer Sua Empresa - Escritório Contábil De Grandi';
+    document.title = 'Migrar Sua Empresa - Escritório Contábil De Grandi';
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Transfira sua empresa para o Escritório Contábil De Grandi. Oferecemos migração completa e serviços contábeis especializados em Gaurama/RS.');
+      metaDescription.setAttribute('content', 'Migre sua empresa para o Escritório Contábil De Grandi. Oferecemos migração completa e serviços contábeis especializados em Gaurama/RS.');
     }
   }, []);
 
   const handleGoBack = () => {
     navigate('/');
-  };
-
-  const handleWhatsAppContact = () => {
-    const message = encodeURIComponent(
-      "Olá! Gostaria de trazer minha empresa para o Escritório Contábil De Grandi. Podem me ajudar com a migração?"
-    );
-    window.open(`https://wa.me/5554999999999?text=${message}`, '_blank');
   };
 
   return (
@@ -49,62 +43,29 @@ const TrazerSuaEmpresaPage = () => {
                 <Building2 className="h-10 w-10 text-primary" />
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Traga Sua Empresa Para Nós
+                Migrar Sua Empresa
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Migre sua contabilidade para o Escritório De Grandi e tenha acesso a serviços especializados, 
-                atendimento personalizado e toda expertise que sua empresa merece.
+                Deseja migrar a contabilidade da sua empresa? Preencha o formulário que entraremos em contato com você.
               </p>
             </AnimatedSection>
           </div>
         </section>
 
-        {/* Vantagens Section */}
+        {/* Processo de Migração */}
         <section className="py-16">
           <div className="container mx-auto px-4">
             <AnimatedSection animation="fade-in-up" className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-12">Por Que Escolher o De Grandi?</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="text-center p-6 rounded-xl border bg-card">
-                  <Users className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold mb-3">Atendimento Personalizado</h3>
-                  <p className="text-muted-foreground">
-                    Cada empresa é única. Oferecemos soluções personalizadas para suas necessidades específicas.
-                  </p>
-                </div>
-                <div className="text-center p-6 rounded-xl border bg-card">
-                  <Clock className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold mb-3">Migração Rápida</h3>
-                  <p className="text-muted-foreground">
-                    Processo de migração eficiente e sem complicações. Cuidamos de toda a transferência.
-                  </p>
-                </div>
-                <div className="text-center p-6 rounded-xl border bg-card">
-                  <FileText className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold mb-3">Serviços Completos</h3>
-                  <p className="text-muted-foreground">
-                    Contabilidade, folha de pagamento, fiscal, tributário e consultoria empresarial.
-                  </p>
-                </div>
-              </div>
-            </AnimatedSection>
-          </div>
-        </section>
-
-        {/* Processo de Migração */}
-        <section className="py-16 bg-muted/50">
-          <div className="container mx-auto px-4">
-            <AnimatedSection animation="fade-in-up" className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-12">Como Funciona a Migração</h2>
+              <h2 className="text-3xl font-bold text-center mb-12">Como Funciona</h2>
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm flex-shrink-0">
                     1
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Análise Inicial</h3>
+                    <h3 className="text-xl font-semibold mb-2">Cadastro</h3>
                     <p className="text-muted-foreground">
-                      Avaliamos sua situação atual e identificamos todas as informações necessárias para a migração.
+                      Deixe seus dados, nós entraremos em contato.
                     </p>
                   </div>
                 </div>
@@ -113,9 +74,9 @@ const TrazerSuaEmpresaPage = () => {
                     2
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Coleta de Documentos</h3>
+                    <h3 className="text-xl font-semibold mb-2">Documentos</h3>
                     <p className="text-muted-foreground">
-                      Solicitamos e organizamos toda a documentação necessária do seu contador anterior.
+                      Nos envie a documentação solicitada, e assine os contratos.
                     </p>
                   </div>
                 </div>
@@ -124,9 +85,9 @@ const TrazerSuaEmpresaPage = () => {
                     3
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Transferência e Configuração</h3>
+                    <h3 className="text-xl font-semibold mb-2">Daremos entrada</h3>
                     <p className="text-muted-foreground">
-                      Realizamos a transferência completa e configuramos todos os sistemas para sua empresa.
+                      Cuidamos de tudo, você aguarda.
                     </p>
                   </div>
                 </div>
@@ -135,9 +96,9 @@ const TrazerSuaEmpresaPage = () => {
                     4
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Início dos Serviços</h3>
+                    <h3 className="text-xl font-semibold mb-2">Check</h3>
                     <p className="text-muted-foreground">
-                      Sua empresa já está conosco! Começamos a prestar todos os serviços contábeis necessários.
+                      Seu CNPJ em mãos.
                     </p>
                   </div>
                 </div>
@@ -146,66 +107,84 @@ const TrazerSuaEmpresaPage = () => {
           </div>
         </section>
 
-        {/* FAQ Section */}
+        {/* CTA to Form */}
+        <section className="py-16 bg-muted/50">
+          <div className="container mx-auto px-4">
+            <AnimatedSection animation="fade-in-up" className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl font-bold mb-6">
+                Quer saber quanto custa para cuidarmos da contabilidade da sua empresa?
+              </h2>
+              <p className="text-xl text-muted-foreground mb-8">
+                Preencha o formulário abaixo que em breve entraremos em contato.
+              </p>
+            </AnimatedSection>
+          </div>
+        </section>
+
+        {/* Contact Form */}
         <section className="py-16">
+          <div className="container mx-auto px-4">
+            <AnimatedSection animation="fade-in-up" className="max-w-4xl mx-auto">
+              <ContactForm />
+            </AnimatedSection>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 bg-muted/50">
           <div className="container mx-auto px-4">
             <AnimatedSection animation="fade-in-up" className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold text-center mb-12">Perguntas Frequentes</h2>
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
-                  <AccordionTrigger>Quanto tempo demora a migração?</AccordionTrigger>
+                  <AccordionTrigger>Como faço para migrar minha empresa?</AccordionTrigger>
                   <AccordionContent>
-                    O processo de migração geralmente leva de 15 a 30 dias, dependendo da complexidade da empresa e da disponibilidade da documentação.
+                    É só você preencher o formulário de contato com as informações e enviar o número do seu CNPJ, entraremos em contato com você. Ou utilize nossos contatos: WhatsApp, E-mail ou Telefone.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
-                  <AccordionTrigger>Preciso pagar alguma taxa de migração?</AccordionTrigger>
+                  <AccordionTrigger>Quanto tempo leva o processo de migração de contabilidade?</AccordionTrigger>
                   <AccordionContent>
-                    Não cobramos taxas adicionais para migração. O processo está incluído no início da prestação de nossos serviços.
+                    O processo de migração é muito rápido e pode ser feito em qualquer momento do mês. O processo completo leva de 10 a 20 dias. Posteriormente entraremos em contato com o outro contador e solicitaremos o envio das informações/documentos.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
-                  <AccordionTrigger>Quais documentos são necessários?</AccordionTrigger>
+                  <AccordionTrigger>É preciso ter ou adquirir certificado digital para utilizar os serviços?</AccordionTrigger>
                   <AccordionContent>
-                    Geralmente precisamos do contrato social, alterações contratuais, livros digitais, declarações dos últimos anos e informações sobre funcionários (se houver).
+                    Para as empresas prestadoras de serviços enquadradas no Simples Nacional, que não possuem funcionários, não é necessário o uso do certificado digital. Para demais empresas é necessário do certificado digital e-CNPJ A1.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
-                  <AccordionTrigger>E se houver pendências com o contador anterior?</AccordionTrigger>
+                  <AccordionTrigger>O que preciso fazer durante o mês?</AccordionTrigger>
                   <AccordionContent>
-                    Auxiliamos na identificação e resolução de pendências, orientando sobre os melhores caminhos para regularizar a situação da empresa.
+                    Enviar a movimentação financeira da sua empresa, extratos bancários, XML das notas fiscais de entrada e saída e dados dos funcionários se houver. Fique tranquilo(a), possuímos ferramentas para agilizar e facilitar esse envio.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-5">
-                  <AccordionTrigger>Vocês atendem empresas de todos os portes?</AccordionTrigger>
+                  <AccordionTrigger>Tenho funcionários. Vocês fazem a folha de pagamento?</AccordionTrigger>
                   <AccordionContent>
-                    Sim, atendemos desde MEIs até empresas de grande porte, sempre com soluções adequadas para cada realidade empresarial.
+                    Sim, entre em contato conosco para elaborarmos um plano personalizado.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-6">
+                  <AccordionTrigger>Qual prazo que tenho para cancelar o contrato de prestação de serviços contábil?</AccordionTrigger>
+                  <AccordionContent>
+                    O prazo para cancelamento dos serviços contábeis é 60 dias após a contratação dos serviços, sem multa de rescisão do contrato. Para cancelar é necessário enviar a solicitação de cancelamento, por e-mail, com no mínimo 30 dias de antecedência.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-7">
+                  <AccordionTrigger>Posso solicitar reunião com o Contador da minha Empresa?</AccordionTrigger>
+                  <AccordionContent>
+                    Sim, para agendar reunião entre em contato pelos nossos canais de atendimento, Telefone, WhatsApp, e E-mail, e agende sua reunião.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-8">
+                  <AccordionTrigger>Quero abrir uma Empresa, mas estou com dúvidas, o que devo fazer?</AccordionTrigger>
+                  <AccordionContent>
+                    Acesse a nossa página Abrir Empresa para saber mais. Nossa equipe entrará em contato com você e fará as orientações e, caso seja de sua preferência, podemos agendar uma reunião.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
-            </AnimatedSection>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-16 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4">
-            <AnimatedSection animation="fade-in-up" className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-6">
-                Pronto Para Trazer Sua Empresa?
-              </h2>
-              <p className="text-xl mb-8 opacity-90">
-                Entre em contato conosco e inicie o processo de migração hoje mesmo!
-              </p>
-              <Button 
-                onClick={handleWhatsAppContact}
-                size="lg" 
-                variant="secondary"
-                className="text-lg px-8 py-6"
-              >
-                <CheckCircle className="h-5 w-5 mr-2" />
-                Iniciar Migração pelo WhatsApp
-              </Button>
             </AnimatedSection>
           </div>
         </section>
