@@ -1,4 +1,3 @@
-
 import { Building, Users, Calculator, FileText, UserCheck, Briefcase } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
@@ -37,7 +36,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="servicos" className="py-16 md:py-20 bg-gray-50">
+    <section id="servicos" className="py-16 md:py-20" style={{ background: 'hsl(var(--section-bg))' }}>
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title">Nossos Serviços</h2>

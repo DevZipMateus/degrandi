@@ -1,10 +1,9 @@
-
 import { CheckCircle, Award, Clock, Shield } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
 const AboutSection = () => {
   return (
-    <section id="sobre" className="py-24 bg-white">
+    <section id="sobre" className="py-24" style={{ background: 'hsl(var(--section-bg))' }}>
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title">Sobre Nós</h2>

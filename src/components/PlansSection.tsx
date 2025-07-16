@@ -1,4 +1,3 @@
-
 import PlanCard from './PlanCard';
 import AnimatedSection from './AnimatedSection';
 import { Users, Shield, TrendingUp } from 'lucide-react';
@@ -36,7 +35,7 @@ const PlansSection = () => {
   }];
 
   return (
-    <section id="planos" className="bg-white py-16">
+    <section id="planos" style={{ background: 'hsl(var(--section-bg))' }} className="py-16">
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title">Conheça Nossos Planos</h2>

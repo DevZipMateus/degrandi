@@ -39,6 +39,9 @@
     --ring: 220 75% 50%;
 
     --radius: 0.75rem;
+
+    /* Nova cor de background personalizada */
+    --section-bg: 198 100% 77%;
   }
 
   .dark {
@@ -69,6 +72,8 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 220 75% 50%;
+
+    --section-bg: 198 100% 77%;
   }
 }
 
@@ -81,7 +86,7 @@
     @apply text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
     overflow-x: hidden;
-    background: linear-gradient(135deg, hsl(220, 75%, 50%) 0%, #5897fc 100%);
+    background: hsl(var(--section-bg));
     min-height: 100vh;
   }
 
@@ -180,6 +185,7 @@
 section {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  background: hsl(var(--section-bg));
 }
 
 section + section {

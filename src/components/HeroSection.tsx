@@ -8,7 +8,7 @@ const HeroSection = () => {
       id="inicio" 
       className="relative min-h-screen flex items-center overflow-hidden pt-20"
       style={{
-        background: 'linear-gradient(135deg, hsl(220, 75%, 55%) 0%, hsl(220, 85%, 60%) 20%, hsl(220, 90%, 70%) 40%, hsl(220, 95%, 85%) 70%, #ffffff 100%)'
+        background: 'hsl(var(--section-bg))'
       }}
     >
       {/* Background Elements */}
