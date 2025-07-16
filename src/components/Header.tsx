@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,13 +32,13 @@ const Header = () => {
     }`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
-        <a href="#inicio" className="z-10 relative">
+        <Link to="/" className="z-10 relative">
           <img 
             alt="Escritório Contábil De Grandi" 
             className="h-12 md:h-14" 
             src="/lovable-uploads/c2cc8633-a51b-4fe0-b8d0-338ec56dd30b.png" 
           />
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
@@ -47,9 +48,9 @@ const Header = () => {
           <a href="#sobre" className="text-sm font-medium transition-colors hover:text-primary text-gray-700">
             Sobre
           </a>
-          <a href="#servicos" className="text-sm font-medium transition-colors hover:text-primary text-gray-700">
+          <Link to="/servicos" className="text-sm font-medium transition-colors hover:text-primary text-gray-700">
             Serviços
-          </a>
+          </Link>
           <a href="#depoimentos" className="text-sm font-medium transition-colors hover:text-primary text-gray-700">
             Depoimentos
           </a>
@@ -87,9 +88,9 @@ const Header = () => {
           <a href="#sobre" onClick={handleNavClick} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-primary">
             Sobre
           </a>
-          <a href="#servicos" onClick={handleNavClick} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-primary">
+          <Link to="/servicos" onClick={handleNavClick} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-primary">
             Serviços
-          </a>
+          </Link>
           <a href="#depoimentos" onClick={handleNavClick} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-primary">
             Depoimentos
           </a>
