@@ -1,3 +1,4 @@
+
 import AnimatedSection from './AnimatedSection';
 import { ChevronRight, Calculator, FileText, Users } from 'lucide-react';
 const HeroSection = () => {
@@ -75,7 +76,7 @@ const HeroSection = () => {
             <div className="relative">
               <div className="absolute -top-12 -left-12 w-64 h-64 bg-primary/10 rounded-full filter blur-3xl"></div>
               <div className="relative z-10">
-                <img alt="Escritório contábil moderno e profissional" className="rounded-2xl shadow-xl w-full object-cover" src="/lovable-uploads/d25da03d-5afa-40a5-8a57-918146997680.jpg" />
+                <img alt="Escritório Contábil De Grandi - Contabilidade" className="rounded-2xl shadow-xl w-full object-cover" src="/lovable-uploads/17355d5f-03e3-44b4-9fbd-4ee68271f437.png" />
               </div>
               <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-primary/10 rounded-full filter blur-3xl"></div>
             </div>
