@@ -46,6 +46,21 @@ const ContactSection = () => {
                       </p>
                     </div>
                   </div>
+
+                  {/* Google Maps for Viadutos */}
+                  <div className="mt-6">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.0!2d-52.0211366!3d-27.5723646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDM0JzIwLjUiUyA1MsKwMDEnMTYuMSJX!5e0!3m2!1spt-BR!2sbr!4v1640995200000!5m2!1spt-BR!2sbr"
+                      width="100%"
+                      height="192"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      className="w-full h-48 rounded-lg"
+                      title="Mapa de Viadutos/RS"
+                    />
+                  </div>
                 </div>
               </div>
             </AnimatedSection>
