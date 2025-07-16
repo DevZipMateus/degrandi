@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import AnimatedSection from '@/components/AnimatedSection';
-import { Building2, FileText, Users, CheckCircle } from 'lucide-react';
+import { Building2, FileText, Users, CheckCircle, Phone, MessageSquare } from 'lucide-react';
 
 const AberturaEmpresaPage = () => {
   useEffect(() => {
@@ -52,57 +52,71 @@ const AberturaEmpresaPage = () => {
           </div>
         </section>
 
-        {/* Services Section */}
+        {/* Steps Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <AnimatedSection animation="fade-in-up" className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Como Podemos Te Ajudar
+                Como Funciona
               </h2>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-                Nossa equipe especializada oferece suporte completo em todas as etapas do processo de abertura da sua empresa
+                Nosso processo simplificado em 4 etapas para abrir sua empresa
               </p>
             </AnimatedSection>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <AnimatedSection animation="fade-in-up" delay={100}>
-                <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
-                    <FileText className="h-6 w-6 text-primary" />
+                <div className="text-center">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                    <span className="text-2xl font-bold text-primary">1</span>
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                    Documentação Completa
+                    Cadastro
                   </h3>
                   <p className="text-gray-600">
-                    Preparamos todos os documentos necessários para a abertura da sua empresa com total conformidade legal.
+                    Deixe seus dados, nós entraremos em contato
                   </p>
                 </div>
               </AnimatedSection>
 
               <AnimatedSection animation="fade-in-up" delay={200}>
-                <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
-                    <Users className="h-6 w-6 text-primary" />
+                <div className="text-center">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                    <FileText className="h-8 w-8 text-primary" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                    Consultoria Especializada
+                    Documentos
                   </h3>
                   <p className="text-gray-600">
-                    Nossa equipe te orienta sobre o melhor tipo de empresa e regime tributário para seu negócio.
+                    Nos envie a documentação solicitada, e assine os contratos
                   </p>
                 </div>
               </AnimatedSection>
 
               <AnimatedSection animation="fade-in-up" delay={300}>
-                <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
-                    <CheckCircle className="h-6 w-6 text-primary" />
+                <div className="text-center">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                    <Users className="h-8 w-8 text-primary" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                    Processo Simplificado
+                    Daremos entrada
                   </h3>
                   <p className="text-gray-600">
-                    Cuidamos de todo o processo burocrático para que você possa focar no que realmente importa: seu negócio.
+                    Cuidamos de tudo, você aguarda
+                  </p>
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection animation="fade-in-up" delay={400}>
+                <div className="text-center">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                    <CheckCircle className="h-8 w-8 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    Check
+                  </h3>
+                  <p className="text-gray-600">
+                    Seu CNPJ em mãos
                   </p>
                 </div>
               </AnimatedSection>
@@ -110,8 +124,160 @@ const AberturaEmpresaPage = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
+        {/* FAQ Section */}
         <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <AnimatedSection animation="fade-in-up" className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Dúvidas Frequentes de Quem Está Abrindo uma Empresa
+              </h2>
+              <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+                Mas se ficar com alguma dúvida entre em contato com a gente.
+              </p>
+            </AnimatedSection>
+
+            <div className="max-w-4xl mx-auto space-y-6">
+              <AnimatedSection animation="fade-in-up" delay={100}>
+                <div className="bg-white rounded-lg p-6 shadow-md">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                    1 - Quero abrir uma empresa. Por onde começar?
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    O primeiro passo é sempre o mais importante. Para que não haja erros, é essencial ao empreendedor saber se realmente é essa a sua intenção e se tem condições para manter um negócio próprio e o que isso implica. O primeiro passo é ter clara a ideia do que se trata a empresa, como irá atuar e em que mercado estará inserido o seu negócio e ter profundo conhecimento do segmento escolhido. O segundo passo é fazer uma consulta a um contador de confiança, já que há diferentes modalidades e enquadramentos entre as empresas e este profissional poderá fazer este levantamento e indicar as opções adequadas.
+                  </p>
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection animation="fade-in-up" delay={150}>
+                <div className="bg-white rounded-lg p-6 shadow-md">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                    2 - Qual a melhor opção de Enquadramento para minha Empresa?
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Após verificar qual a atividade pretendida, qual a estimativa de faturamento anual e se irá possuir funcionários, vamos orientar você sobre qual será o melhor Enquadramento para sua Empresa, visando a menor carga tributária dentro da Lei.
+                  </p>
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection animation="fade-in-up" delay={200}>
+                <div className="bg-white rounded-lg p-6 shadow-md">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                    3 - Qual o melhor Regime Tributário para minha Empresa?
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Após verificar qual a atividade pretendida, qual a estimativa de faturamento anual e a quantidade de funcionários, faremos um planejamento tributário e vamos orientar você sobre qual será o melhor Regime Tributário para sua Empresa.
+                  </p>
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection animation="fade-in-up" delay={250}>
+                <div className="bg-white rounded-lg p-6 shadow-md">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                    4 - Quantos dias demora para abrir minha Empresa?
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Depende do tipo de Empresa que você pretende abrir. Normalmente leva-se até 20 dias úteis, porém esse prazo pode ser alterado caso haja alguma pendência com o zoneamento (área escolhida), documentação, ou para alguns segmentos que necessitam de licenças específicas.
+                  </p>
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection animation="fade-in-up" delay={300}>
+                <div className="bg-white rounded-lg p-6 shadow-md">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                    5 - Quais as taxas que devo pagar para abrir minha Empresa?
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Atualmente, são cobradas taxas da Junta comercial. Existe também uma cobrança anual por parte das Prefeituras quanto a Taxa de Funcionamento e Taxa de Publicidade, mas existe variações de valores e datas de cobrança conforme cada município.
+                  </p>
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection animation="fade-in-up" delay={350}>
+                <div className="bg-white rounded-lg p-6 shadow-md">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                    6 - Preciso de certificado digital E-CPF para abrir minha Empresa?
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Não, poderá ser inicialmente utilizado o do contador para abertura da sua empresa.
+                  </p>
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection animation="fade-in-up" delay={400}>
+                <div className="bg-white rounded-lg p-6 shadow-md">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                    7 - Não quero ter sócios, posso abrir minha empresa sozinho?
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Sim, se você pretende abrir sua Empresa sozinho, hoje existem a opção de ser MEI ou Empresário Individual.
+                  </p>
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection animation="fade-in-up" delay={450}>
+                <div className="bg-white rounded-lg p-6 shadow-md">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                    8 - O que é Empresário Individual?
+                  </h3>
+                  <div className="text-gray-600 leading-relaxed space-y-3">
+                    <p>
+                      O Empresário Individual é a pessoa natural que exerce atividade empresarial, sendo que possui inscrição no CNPJ para fins tributários, mas não é considerado pessoa jurídica de direito privado de acordo com o Código Civil.
+                    </p>
+                    <p>Veremos a seguir as particularidades que o Empresário Individual possui:</p>
+                    <ul className="list-disc list-inside space-y-2 ml-4">
+                      <li>Não tem limite máximo de faturamento</li>
+                      <li>A responsabilidade do titular da empresa é ilimitada, ou seja, não existe separação patrimonial da pessoa física e da empresa, dessa forma O empresário Individual responde de forma ilimitada pelas dívidas da Empresa.</li>
+                      <li>Não tem exigência mínima de capital para ser integralizado no momento de sua constituição.</li>
+                      <li>No nome empresarial deverá figurar de forma completa o nome do empresário. Deverá conter também, obrigatoriamente, o gênero do negócio, de acordo com o objeto social. Observando que somente poderão ser abreviados seus prenomes. Sendo assim, não poderá ser abreviado o último sobrenome</li>
+                      <li>Somente é permitido um Empresário Individual por CPF.</li>
+                    </ul>
+                    <p>Para saber mais detalhes entre em contato conosco.</p>
+                  </div>
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection animation="fade-in-up" delay={500}>
+                <div className="bg-white rounded-lg p-6 shadow-md">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                    9 - O que é sociedade Simples?
+                  </h3>
+                  <div className="text-gray-600 leading-relaxed space-y-3">
+                    <p>
+                      As Sociedades Simples são aqueles em que os sócios exerçam profissão intelectual, de natureza científica, literária ou artística, desde que o exercício da profissão não constitua elemento de empresa.
+                    </p>
+                    <p>
+                      Ponto fundamental na Sociedade Simples é que a atividade fim depende diretamente da atuação e conhecimento pessoal dos seus sócios. Por exemplo, uma sociedade constituída por dentistas, onde os mesmos exerçam a atividade da empresa. Esse modelo societário deve ser registrado no Cartório de Registro Civil das Pessoas Jurídicas.
+                    </p>
+                    <p>Para saber mais detalhes entre em contato conosco.</p>
+                  </div>
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection animation="fade-in-up" delay={550}>
+                <div className="bg-white rounded-lg p-6 shadow-md">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                    10 - O que é sociedade Empresária?
+                  </h3>
+                  <div className="text-gray-600 leading-relaxed space-y-3">
+                    <p>
+                      Sociedade Empresária é a que irá atuar da maneira prevista no art. 966 do Código Civil, ou seja, exercerá profissionalmente atividade econômica organizada para produção ou a circulação de bens ou de serviços.
+                    </p>
+                    <p>
+                      As Sociedades Empresárias devem ser registradas na Junta Comercial. Um ponto importante é que as Sociedades Empresárias estão sujeitas a Lei da Falência (Lei nº 11.101, de 9 de fevereiro de 2005), enquanto as Sociedades Simples não estão.
+                    </p>
+                    <p>
+                      Para esclarecimento, tal Lei disciplina a recuperação judicial, a recuperação extrajudicial e a falência do empresário e da sociedade empresária. Quando a empresa passa por algum momento de complicação financeira e se torna incapaz de pagar suas dívidas, pode entrar com o pedido de recuperação judicial, que é o processo jurídico que visa evitar a falência da empresa, que com a ciência de seus credores e demais diretrizes impostas, poderá continuar suas atividades, buscando pagar suas dívidas e se reestruturar financeiramente.
+                    </p>
+                    <p>Para saber mais detalhes entre em contato conosco.</p>
+                  </div>
+                </div>
+              </AnimatedSection>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <AnimatedSection animation="fade-in-up" className="text-center max-w-3xl mx-auto">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -120,12 +286,24 @@ const AberturaEmpresaPage = () => {
               <p className="text-gray-600 text-lg mb-8">
                 Entre em contato conosco e dê o primeiro passo para transformar sua ideia em um negócio de sucesso.
               </p>
-              <a 
-                href="#contato" 
-                className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors duration-300 text-lg font-semibold"
-              >
-                Falar com um Especialista
-              </a>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a 
+                  href="#contato" 
+                  className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors duration-300 text-lg font-semibold"
+                >
+                  <Phone className="h-5 w-5 mr-2" />
+                  Falar com um Especialista
+                </a>
+                <a 
+                  href="https://wa.me/5433911010?text=Olá! Gostaria de saber mais sobre abertura de empresa."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors duration-300 text-lg font-semibold"
+                >
+                  <MessageSquare className="h-5 w-5 mr-2" />
+                  WhatsApp
+                </a>
+              </div>
             </AnimatedSection>
           </div>
         </section>
