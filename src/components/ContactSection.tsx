@@ -1,4 +1,5 @@
 
+
 import AnimatedSection from './AnimatedSection';
 import { MapPin, Phone, Mail, Send } from 'lucide-react';
 
@@ -98,6 +99,21 @@ const ContactSection = () => {
                       </p>
                     </div>
                   </div>
+
+                  {/* Google Maps for Gaurama */}
+                  <div className="mt-6">
+                    <iframe
+                      src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=R.+João+Amândio+Sperb,+229+-+Sala+106+-+Centro,+Gaurama+-+RS,+99830-000"
+                      width="100%"
+                      height="192"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      className="w-full h-48 rounded-lg"
+                      title="Mapa de Gaurama/RS"
+                    />
+                  </div>
                 </div>
               </div>
             </AnimatedSection>
@@ -160,3 +176,4 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
+
