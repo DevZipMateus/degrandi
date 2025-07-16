@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '@/components/Header';
@@ -35,7 +36,7 @@ const AberturaEmpresaPage = () => {
   }, []);
 
   const handleGoBack = () => {
-    navigate(-1);
+    navigate('/');
   };
 
   return (
