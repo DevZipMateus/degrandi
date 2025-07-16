@@ -1,23 +1,15 @@
 
-import { cn } from "@/lib/utils";
+import { Link } from 'react-router-dom';
 
-interface LogoProps {
-  scrolled: boolean;
-}
-
-const Logo = ({ scrolled }: LogoProps) => {
+const Logo = () => {
   return (
-    <a href="#" className="flex items-center z-10 relative">
-      <div
-        className={cn(
-          "text-3xl font-bold transition-all duration-300",
-          scrolled ? "text-primary" : "text-primary",
-          "hover:scale-105"
-        )}
-      >
-        Contabilify
-      </div>
-    </a>
+    <Link to="/" className="z-10 relative">
+      <img 
+        alt="Escritório Contábil De Grandi" 
+        className="h-12 md:h-14" 
+        src="/lovable-uploads/c2cc8633-a51b-4fe0-b8d0-338ec56dd30b.png" 
+      />
+    </Link>
   );
 };
 
