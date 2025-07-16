@@ -1,10 +1,7 @@
-
 import { CheckCircle, Award, Clock, Shield } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
-
 const AboutSection = () => {
-  return (
-    <section id="sobre" className="py-24 bg-white">
+  return <section id="sobre" className="py-24 bg-white">
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title">Sobre o Escritório De Grandi</h2>
@@ -18,11 +15,7 @@ const AboutSection = () => {
             <div className="relative">
               <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/10 rounded-full z-0"></div>
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1000" 
-                  alt="Equipe do Escritório Contábil De Grandi" 
-                  className="w-full h-auto"
-                />
+                <img alt="Equipe do Escritório Contábil De Grandi" className="w-full h-auto" src="https://i.pinimg.com/1200x/80/eb/5a/80eb5aa736bff707aad224866c98880e.jpg" />
               </div>
             </div>
           </AnimatedSection>
@@ -82,8 +75,6 @@ const AboutSection = () => {
           </AnimatedSection>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
