@@ -1,10 +1,9 @@
-
 import { useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import AnimatedSection from '@/components/AnimatedSection';
-import { Building2, FileText, Users, CheckCircle, Phone, MessageSquare } from 'lucide-react';
+import { Building2, FileText, Users, CheckCircle, Phone, MessageSquare, Pencil } from 'lucide-react';
 
 const AberturaEmpresaPage = () => {
   useEffect(() => {
@@ -53,7 +52,7 @@ const AberturaEmpresaPage = () => {
         </section>
 
         {/* Steps Section */}
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <AnimatedSection animation="fade-in-up" className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -68,7 +67,7 @@ const AberturaEmpresaPage = () => {
               <AnimatedSection animation="fade-in-up" delay={100}>
                 <div className="text-center">
                   <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                    <span className="text-2xl font-bold text-primary">1</span>
+                    <Pencil className="h-8 w-8 text-primary" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
                     Cadastro
@@ -125,7 +124,7 @@ const AberturaEmpresaPage = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-muted/30">
           <div className="container mx-auto px-4">
             <AnimatedSection animation="fade-in-up" className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -277,7 +276,7 @@ const AberturaEmpresaPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <AnimatedSection animation="fade-in-up" className="text-center max-w-3xl mx-auto">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
