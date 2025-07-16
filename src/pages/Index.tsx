@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
+import CTAButtons from '@/components/CTAButtons';
 import AboutSection from '@/components/AboutSection';
 import PlansSection from '@/components/PlansSection';
 import ServicesButton from '@/components/ServicesButton';
@@ -76,6 +77,7 @@ const Index = () => {
       <Header />
       <main className="flex-grow pt-0">
         <HeroSection />
+        <CTAButtons />
         <AboutSection />
         <PlansSection />
         <ServicesButton />
