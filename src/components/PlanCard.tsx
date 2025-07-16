@@ -19,6 +19,14 @@ const PlanCard = ({
   isPopular = false,
   className 
 }: PlanCardProps) => {
+  const phoneNumber = "5433911010";
+  const message = `Olá! Gostaria de solicitar um orçamento para o plano ${title}.`;
+  
+  const handleWhatsAppClick = () => {
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
+
   return (
     <div className={cn(
       "glass-card rounded-xl overflow-hidden transition-all duration-300",
@@ -37,7 +45,7 @@ const PlanCard = ({
         
         <div className="mt-5">
           <span className="text-3xl font-bold">{price}</span>
-          <span className="text-gray-500 ml-1">/mês</span>
+          {price !== "Consulte" && <span className="text-gray-500 ml-1">/mês</span>}
         </div>
         
         <ul className="mt-6 space-y-4">
@@ -51,8 +59,8 @@ const PlanCard = ({
           ))}
         </ul>
         
-        <a
-          href="#contato"
+        <button
+          onClick={handleWhatsAppClick}
           className={cn(
             "mt-8 w-full block text-center py-3 rounded-md font-medium transition-colors",
             isPopular 
@@ -60,8 +68,8 @@ const PlanCard = ({
               : "bg-white text-primary border border-gray-200 hover:bg-gray-50"
           )}
         >
-          Escolher Plano
-        </a>
+          Solicitar Orçamento
+        </button>
       </div>
     </div>
   );
