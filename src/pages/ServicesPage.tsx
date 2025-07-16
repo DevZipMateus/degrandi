@@ -6,6 +6,14 @@ import { Building, Users, Calculator, FileText, UserCheck, Briefcase } from 'luc
 import AnimatedSection from '@/components/AnimatedSection';
 
 const ServicesPage = () => {
+  const phoneNumber = "5433911010";
+  
+  const handleWhatsAppClick = (serviceName: string) => {
+    const message = `Olá! Gostaria de solicitar um orçamento para o serviço de ${serviceName}.`;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
+
   const services = [
     {
       icon: Building,
@@ -62,23 +70,23 @@ const ServicesPage = () => {
                     animation="fade-in-up" 
                     delay={index * 100}
                   >
-                    <div className="card-feature h-full">
+                    <div className="card-feature h-full flex flex-col">
                       <div className="w-12 h-12 md:w-14 md:h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4 md:mb-6">
                         <IconComponent className="h-6 w-6 md:h-7 md:w-7 text-primary" />
                       </div>
                       <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3">{service.title}</h3>
-                      <p className="text-sm md:text-base text-gray-600">{service.description}</p>
+                      <p className="text-sm md:text-base text-gray-600 flex-grow mb-4">{service.description}</p>
+                      <button
+                        onClick={() => handleWhatsAppClick(service.title)}
+                        className="btn-primary w-full mt-auto"
+                      >
+                        Solicitar Orçamento
+                      </button>
                     </div>
                   </AnimatedSection>
                 );
               })}
             </div>
-
-            <AnimatedSection className="text-center mt-10 md:mt-12">
-              <a href="#contato" className="btn-primary inline-block">
-                Solicitar Orçamento
-              </a>
-            </AnimatedSection>
           </div>
         </section>
       </main>
