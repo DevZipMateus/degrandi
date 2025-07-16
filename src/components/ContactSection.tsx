@@ -11,14 +11,15 @@ const ContactSection = () => {
           <AnimatedSection>
             <h2 className="section-title">Nossa Localização</h2>
             <p className="section-subtitle">
-              Visite nosso escritório em Gaurama/RS
+              Visite nossos escritórios no Rio Grande do Sul
             </p>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
+            {/* Viadutos/RS Location */}
             <AnimatedSection animation="slide-in-left">
-              <div className="bg-white rounded-xl p-8 shadow-lg">
-                <h3 className="text-2xl font-bold mb-6 text-gray-900">Informações de Contato</h3>
+              <div className="bg-white rounded-xl p-8 shadow-lg h-full">
+                <h3 className="text-2xl font-bold mb-6 text-gray-900">VIADUTOS/RS</h3>
                 
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
@@ -28,9 +29,9 @@ const ContactSection = () => {
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Endereço</h4>
                       <p className="text-gray-600">
-                        Rua João Amândio Sperb, 229<br />
-                        Sala 106, Centro<br />
-                        Gaurama - RS
+                        Av. Independência - n° 377<br />
+                        Centro<br />
+                        Viadutos/RS - CEP: 99820-000
                       </p>
                     </div>
                   </div>
@@ -40,8 +41,60 @@ const ContactSection = () => {
                       <Phone className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">Telefone</h4>
-                      <p className="text-gray-600">(54) 3391-1010</p>
+                      <h4 className="font-semibold text-gray-900 mb-1">Telefones</h4>
+                      <p className="text-gray-600">
+                        (54) 3699-1514<br />
+                        (54) 99688-5591
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <Clock className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-1">Horário de Funcionamento</h4>
+                      <p className="text-gray-600">
+                        Segunda a Sexta: 8h às 18h<br />
+                        Sábado: 8h às 12h
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
+
+            {/* Gaurama/RS Location */}
+            <AnimatedSection animation="slide-in-right">
+              <div className="bg-white rounded-xl p-8 shadow-lg h-full">
+                <h3 className="text-2xl font-bold mb-6 text-gray-900">GAURAMA/RS</h3>
+                
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <MapPin className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-1">Endereço</h4>
+                      <p className="text-gray-600">
+                        Rua João Amândio Sperb - nº 229<br />
+                        Centro<br />
+                        Gaurama/RS - CEP: 99830-000
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <Phone className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-1">Telefones</h4>
+                      <p className="text-gray-600">
+                        (54) 3391-1010<br />
+                        (54) 98424-7020
+                      </p>
                     </div>
                   </div>
                   
@@ -68,21 +121,6 @@ const ContactSection = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection animation="fade-in" delay={300}>
-              <div className="h-96 rounded-xl overflow-hidden shadow-lg">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.123456789!2d-52.7456789!3d-27.6123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDM2JzQ0LjQiUyA1MsKwNDQnNDQuNCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Localização do Escritório Contábil De Grandi"
-                ></iframe>
               </div>
             </AnimatedSection>
           </div>
