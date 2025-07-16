@@ -1,3 +1,4 @@
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
@@ -49,8 +50,8 @@ const ServicesPage = () => {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
       <Header />
-      <main className="flex-grow pt-20">
-        <section className="py-16 md:py-20" style={{ background: 'hsl(var(--section-bg))' }}>
+      <main className="flex-grow pt-16 sm:pt-20">
+        <section className="spacing-section" style={{ background: 'hsl(var(--section-bg))' }}>
           <div className="section-container">
             <AnimatedSection>
               <h1 className="section-title">Nossos Serviços</h1>
@@ -59,7 +60,7 @@ const ServicesPage = () => {
               </p>
             </AnimatedSection>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 lg:gap-8 mt-10 md:mt-12">
+            <div className="grid-responsive-3 mt-8 sm:mt-10 md:mt-12">
               {services.map((service, index) => {
                 const IconComponent = service.icon;
                 
@@ -70,11 +71,13 @@ const ServicesPage = () => {
                     delay={index * 100}
                   >
                     <div className="card-feature h-full flex flex-col">
-                      <div className="w-12 h-12 md:w-14 md:h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4 md:mb-6">
-                        <IconComponent className="h-6 w-6 md:h-7 md:w-7 text-primary" />
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-3 sm:mb-4 md:mb-6">
+                        <IconComponent className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 text-primary" />
                       </div>
-                      <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3">{service.title}</h3>
-                      <p className="text-sm md:text-base text-gray-600 flex-grow mb-4">{service.description}</p>
+                      <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2 md:mb-3">{service.title}</h3>
+                      <p className="text-xs sm:text-sm md:text-base text-gray-600 flex-grow mb-3 sm:mb-4 leading-relaxed">
+                        {service.description}
+                      </p>
                       <button
                         onClick={() => handleWhatsAppClick(service.title)}
                         className="btn-primary w-full mt-auto"
