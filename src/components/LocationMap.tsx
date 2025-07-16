@@ -1,7 +1,5 @@
 
-import React, { useEffect, useRef } from 'react';
-import mapboxgl from 'mapbox-gl';
-import 'mapbox-gl/dist/mapbox-gl.css';
+import React from 'react';
 
 interface LocationMapProps {
   address: string;
@@ -10,46 +8,23 @@ interface LocationMapProps {
 }
 
 const LocationMap = ({ address, coordinates, className }: LocationMapProps) => {
-  const mapContainer = useRef<HTMLDivElement>(null);
-  const map = useRef<mapboxgl.Map | null>(null);
-
-  useEffect(() => {
-    if (!mapContainer.current) return;
-
-    // Note: Replace 'YOUR_MAPBOX_TOKEN' with your actual Mapbox public token
-    // Get your token from https://mapbox.com/ -> Account -> Tokens
-    mapboxgl.accessToken = 'pk.eyJ1IjoibG92YWJsZSIsImEiOiJjbTNkdjJzOWMwNWsyMmpwc2dnNGNpbzBnIn0.ZdJaGKnhXZbNj9GH_TbOEA';
-    
-    map.current = new mapboxgl.Map({
-      container: mapContainer.current,
-      style: 'mapbox://styles/mapbox/streets-v12',
-      center: coordinates,
-      zoom: 15,
-    });
-
-    // Add a marker at the location
-    new mapboxgl.Marker({
-      color: '#0066cc'
-    })
-      .setLngLat(coordinates)
-      .setPopup(
-        new mapboxgl.Popup({ offset: 25 })
-          .setHTML(`<div class="text-sm font-medium">${address}</div>`)
-      )
-      .addTo(map.current);
-
-    // Add navigation controls
-    map.current.addControl(new mapboxgl.NavigationControl(), 'top-right');
-
-    // Cleanup
-    return () => {
-      map.current?.remove();
-    };
-  }, [coordinates, address]);
+  // Convert coordinates to Google Maps embed URL
+  const [longitude, latitude] = coordinates;
+  const embedUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.0!2d${longitude}!3d${latitude}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM!5e0!3m2!1spt-BR!2sbr!4v1640995200000!5m2!1spt-BR!2sbr&q=${encodeURIComponent(address)}`;
 
   return (
     <div className={`relative ${className}`}>
-      <div ref={mapContainer} className="w-full h-full rounded-lg" />
+      <iframe
+        src={embedUrl}
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        className="w-full h-full rounded-lg"
+        title={`Mapa de ${address}`}
+      />
     </div>
   );
 };
