@@ -1,11 +1,11 @@
-
 import { useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import AnimatedSection from '@/components/AnimatedSection';
+import ContactForm from '@/components/ContactForm';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Building2, FileText, Users, CheckCircle, Phone, MessageSquare, Pencil } from 'lucide-react';
+import { Building2, FileText, Users, CheckCircle, Pencil } from 'lucide-react';
 
 const AberturaEmpresaPage = () => {
   useEffect(() => {
@@ -301,34 +301,17 @@ const AberturaEmpresaPage = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
+        {/* Contact Form Section */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <AnimatedSection animation="fade-in-up" className="text-center max-w-3xl mx-auto">
+            <AnimatedSection animation="fade-in-up" className="text-center max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Pronto para Abrir Sua Empresa?
+                Deixe seus dados e entraremos em contato!
               </h2>
-              <p className="text-gray-600 text-lg mb-8">
-                Entre em contato conosco e dê o primeiro passo para transformar sua ideia em um negócio de sucesso.
+              <p className="text-gray-600 text-lg mb-12">
+                Preencha o formulário abaixo e nossa equipe especializada entrará em contato para dar início ao processo de abertura da sua empresa.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a 
-                  href="#contato" 
-                  className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors duration-300 text-lg font-semibold"
-                >
-                  <Phone className="h-5 w-5 mr-2" />
-                  Falar com um Especialista
-                </a>
-                <a 
-                  href="https://wa.me/5433911010?text=Olá! Gostaria de saber mais sobre abertura de empresa."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors duration-300 text-lg font-semibold"
-                >
-                  <MessageSquare className="h-5 w-5 mr-2" />
-                  WhatsApp
-                </a>
-              </div>
+              <ContactForm />
             </AnimatedSection>
           </div>
         </section>
