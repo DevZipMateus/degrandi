@@ -58,7 +58,8 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 sm:mt-12 pt-6 sm:pt-8 text-center">
-          <p className="text-gray-400 text-sm sm:text-base">© 2025 Escritório Contábil De Grandi Ltda. Todos os direitos reservados. Feito por MonteSite.</p>
+          <p className="text-gray-400 text-sm sm:text-base">© 2025 Escritório Contábil De Grandi Ltda. Todos os direitos reservados.
+ Feito por MonteSite.</p>
         </div>
       </div>
     </footer>;
