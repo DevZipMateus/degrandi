@@ -9,21 +9,21 @@ const EgestorERP = () => {
     <section className="spacing-section bg-white overflow-hidden">
       <div className="section-container max-w-6xl">
         {/* Two-column layout for desktop, stack on mobile */}
-        <div className="flex flex-col md:flex-row md:items-center md:gap-6 lg:gap-8 xl:gap-12 mb-8 sm:mb-10">
+        <div className="flex flex-col lg:flex-row lg:items-center gap-6 sm:gap-8 lg:gap-12 mb-6 sm:mb-8 lg:mb-10">
           {/* Left column - Header Text */}
-          <div className="md:w-1/2 text-center md:text-left mb-6 sm:mb-8 md:mb-0 animate-fade-in">
+          <div className="lg:w-1/2 text-center lg:text-left mb-4 sm:mb-6 lg:mb-0 animate-fade-in">
             <a href={egestorLink} target="_blank" rel="noopener noreferrer" className="inline-block hover:opacity-90 transition-opacity">
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-800 mb-3 sm:mb-4 leading-tight">
+              <h2 className="heading-2 text-gray-800 mb-2 sm:mb-3 lg:mb-4 leading-tight">
                 Sistema de gestão empresarial
               </h2>
             </a>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 font-normal">
+            <p className="body-medium text-gray-600 font-normal">
               Dobre seus lucros otimizando sua gestão
             </p>
           </div>
           
           {/* Right column - Video Container */}
-          <div className="md:w-1/2 rounded-xl overflow-hidden shadow-xl animate-fade-in">
+          <div className="lg:w-1/2 rounded-lg sm:rounded-xl overflow-hidden shadow-lg sm:shadow-xl animate-fade-in">
             <video 
               className="w-full aspect-video object-cover" 
               autoPlay 
@@ -40,8 +40,8 @@ const EgestorERP = () => {
         
         {/* CTA Button - Centered below both columns */}
         <div className="flex justify-center animate-fade-in">
-          <a href={egestorLink} target="_blank" rel="noopener noreferrer" className="inline-block w-full max-w-xs sm:max-w-sm">
-            <button className="w-full py-2.5 sm:py-3 bg-[#7CFFA0] hover:bg-[#6DF090] text-black font-medium rounded-full transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-[1.02] text-sm sm:text-base">
+          <a href={egestorLink} target="_blank" rel="noopener noreferrer" className="inline-block w-full max-w-xs sm:max-w-sm lg:max-w-md">
+            <button className="w-full py-2 sm:py-2.5 lg:py-3 bg-[#7CFFA0] hover:bg-[#6DF090] text-black font-medium rounded-full transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-[1.02] text-sm sm:text-base lg:text-lg">
               Teste grátis
             </button>
           </a>

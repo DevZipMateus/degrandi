@@ -32,7 +32,7 @@ const MethodologySection = () => {
   }];
   
   return (
-    <section id="metodologia" className="py-16 md:py-20">
+    <section id="metodologia" className="spacing-section">
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title text-white">O Caminho do Lucro</h2>
@@ -41,16 +41,12 @@ const MethodologySection = () => {
           </p>
         </AnimatedSection>
 
-        <div className="mt-16 md:flex items-center justify-center hidden">
-          {/* You can add visual methodology diagram here if needed */}
-        </div>
-
-        {/* Versão em cards para dispositivos móveis ou como complemento */}
-        <div className="relative mt-12 md:mt-16">
-          {/* Linha conectora (para desktop) */}
-          <div className="absolute top-24 left-0 right-0 h-1 bg-white/30 hidden lg:block"></div>
+        {/* Metodologia em cards responsivos */}
+        <div className="relative mt-8 sm:mt-12 lg:mt-16">
+          {/* Linha conectora (apenas para desktop) */}
+          <div className="absolute top-16 sm:top-20 lg:top-24 left-0 right-0 h-0.5 sm:h-1 bg-white/30 hidden lg:block"></div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 sm:gap-4 lg:gap-6 xl:gap-8">
             {steps.map((step, index) => {
               const IconComponent = step.icon;
               return (
@@ -60,15 +56,15 @@ const MethodologySection = () => {
                   delay={index * 150} 
                   className="relative"
                 >
-                  <Card className="h-full border border-white/20 shadow-md hover:shadow-lg transition-all duration-300 px-4 py-5 md:p-6 bg-white/10 backdrop-blur-sm">
+                  <Card className="h-full border border-white/20 shadow-md hover:shadow-lg transition-all duration-300 p-3 sm:p-4 lg:p-6 bg-white/10 backdrop-blur-sm">
                     <div className="flex flex-col h-full">
-                      <div className={`w-12 h-12 md:w-14 md:h-14 rounded-full text-primary font-bold text-xl flex items-center justify-center mb-4 md:mb-6 lg:mx-auto ${index < 3 ? 'bg-white' : index === 3 ? 'bg-gray-300' : 'bg-white'}`}>
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-full bg-white text-primary font-bold text-base sm:text-lg lg:text-xl flex items-center justify-center mb-3 sm:mb-4 lg:mb-6 mx-auto lg:mx-auto">
                         {step.number}
                       </div>
-                      <div className="lg:text-center">
-                        <IconComponent className={`h-7 w-7 md:h-8 md:w-8 mb-3 md:mb-4 lg:mx-auto ${index < 3 ? 'text-white' : index === 3 ? 'text-white/70' : 'text-white'}`} />
-                        <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3 text-white">{step.title}</h3>
-                        <p className="text-sm md:text-base text-white/90">{step.description}</p>
+                      <div className="text-center lg:text-center">
+                        <IconComponent className="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8 mb-2 sm:mb-3 lg:mb-4 mx-auto text-white" />
+                        <h3 className="text-sm sm:text-base lg:text-lg xl:text-xl font-bold mb-2 sm:mb-3 text-white leading-tight">{step.title}</h3>
+                        <p className="text-xs sm:text-sm lg:text-base text-white/90 leading-relaxed">{step.description}</p>
                       </div>
                     </div>
                   </Card>
