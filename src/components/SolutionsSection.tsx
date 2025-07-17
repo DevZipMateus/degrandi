@@ -32,11 +32,11 @@ const SolutionsSection = () => {
   ];
 
   return (
-    <section id="solucoes" className="py-24" style={{ background: 'hsl(var(--section-bg))' }}>
+    <section id="solucoes" className="py-24">
       <div className="section-container">
         <AnimatedSection>
-          <h2 className="section-title">Mais que relatórios. Entregamos resultados.</h2>
-          <p className="section-subtitle">
+          <h2 className="section-title text-white">Mais que relatórios. Entregamos resultados.</h2>
+          <p className="section-subtitle text-white/90">
             Nossas soluções transformam números em decisões estratégicas para o crescimento do seu negócio
           </p>
         </AnimatedSection>
@@ -52,10 +52,10 @@ const SolutionsSection = () => {
                 delay={index * 100}
               >
                 <div className="card-feature">
-                  <div className="w-14 h-14 rounded-lg bg-improve/10 flex items-center justify-center mb-6">
-                    <IconComponent className="h-7 w-7 text-improve" />
+                  <div className="w-14 h-14 rounded-lg bg-primary/20 flex items-center justify-center mb-6">
+                    <IconComponent className="h-7 w-7 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">{solution.title}</h3>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">{solution.title}</h3>
                   <p className="text-gray-600">{solution.description}</p>
                 </div>
               </AnimatedSection>

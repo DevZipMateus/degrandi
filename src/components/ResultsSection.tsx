@@ -25,11 +25,11 @@ const ResultsSection = () => {
   ];
 
   return (
-    <section id="resultados" className="py-24 bg-improve-black text-white">
+    <section id="resultados" className="py-24 text-white">
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title text-white">Resultados que falam por si</h2>
-          <p className="section-subtitle text-gray-300">
+          <p className="section-subtitle text-white/90">
             Casos reais de transformação financeira nas empresas que atendemos
           </p>
         </AnimatedSection>
@@ -44,13 +44,13 @@ const ResultsSection = () => {
                 animation="fade-in-up" 
                 delay={index * 100}
               >
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/5 h-full flex flex-col">
-                  <div className="rounded-full bg-improve w-14 h-14 flex items-center justify-center mb-6">
-                    <IconComponent className="h-7 w-7 text-improve-black" />
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 h-full flex flex-col">
+                  <div className="rounded-full bg-white w-14 h-14 flex items-center justify-center mb-6">
+                    <IconComponent className="h-7 w-7 text-primary" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-1">{result.title}</h3>
-                  <p className="text-improve mb-4 font-medium">{result.period}</p>
-                  <p className="text-gray-300">{result.description}</p>
+                  <h3 className="text-2xl font-bold mb-1 text-white">{result.title}</h3>
+                  <p className="text-white/80 mb-4 font-medium">{result.period}</p>
+                  <p className="text-white/90">{result.description}</p>
                 </div>
               </AnimatedSection>
             );

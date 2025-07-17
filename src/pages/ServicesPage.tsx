@@ -52,11 +52,11 @@ const ServicesPage = () => {
     <div className="flex flex-col min-h-screen overflow-hidden">
       <Header />
       <main className="flex-grow pt-16 sm:pt-20">
-        <section className="spacing-section" style={{ background: 'hsl(var(--section-bg))' }}>
+        <section className="spacing-section">
           <div className="section-container">
             <AnimatedSection>
-              <h1 className="section-title">Nossos Serviços</h1>
-              <p className="section-subtitle">
+              <h1 className="section-title text-white">Nossos Serviços</h1>
+              <p className="section-subtitle text-white/90">
                 Soluções contábeis completas para o seu negócio
               </p>
             </AnimatedSection>
@@ -72,10 +72,10 @@ const ServicesPage = () => {
                     delay={index * 100}
                   >
                     <div className="card-feature h-full flex flex-col">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-3 sm:mb-4 md:mb-6">
-                        <IconComponent className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 text-primary" />
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-lg bg-white/20 flex items-center justify-center mb-3 sm:mb-4 md:mb-6">
+                        <IconComponent className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 text-white" />
                       </div>
-                      <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2 md:mb-3">{service.title}</h3>
+                      <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2 md:mb-3 text-gray-900">{service.title}</h3>
                       <p className="text-xs sm:text-sm md:text-base text-gray-600 flex-grow mb-3 sm:mb-4 leading-relaxed">
                         {service.description}
                       </p>
@@ -92,7 +92,7 @@ const ServicesPage = () => {
             </div>
 
             <AnimatedSection className="text-center mt-10 md:mt-12">
-              <Link to="/" className="btn-secondary inline-flex items-center gap-2">
+              <Link to="/" className="bg-white text-primary hover:bg-white/90 px-6 py-3 rounded-md font-medium transition-all duration-200 inline-flex items-center gap-2">
                 <ArrowLeft className="h-4 w-4" />
                 Voltar
               </Link>

@@ -40,8 +40,8 @@ const ServicesSection = () => {
     <section id="servicos" className="py-16 md:py-20">
       <div className="section-container">
         <AnimatedSection>
-          <h2 className="section-title">Nossos Serviços</h2>
-          <p className="section-subtitle">
+          <h2 className="section-title text-white">Nossos Serviços</h2>
+          <p className="section-subtitle text-white/90">
             Soluções contábeis completas para o seu negócio
           </p>
         </AnimatedSection>
@@ -57,10 +57,10 @@ const ServicesSection = () => {
                 delay={index * 100}
               >
                 <div className="card-feature h-full">
-                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4 md:mb-6">
-                    <IconComponent className="h-6 w-6 md:h-7 md:w-7 text-primary" />
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-lg bg-white/20 flex items-center justify-center mb-4 md:mb-6">
+                    <IconComponent className="h-6 w-6 md:h-7 md:w-7 text-white" />
                   </div>
-                  <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3">{service.title}</h3>
+                  <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3 text-gray-900">{service.title}</h3>
                   <p className="text-sm md:text-base text-gray-600">{service.description}</p>
                 </div>
               </AnimatedSection>

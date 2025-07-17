@@ -32,11 +32,11 @@ const MethodologySection = () => {
   }];
   
   return (
-    <section id="metodologia" className="py-16 md:py-20" style={{ background: 'hsl(var(--section-bg))' }}>
+    <section id="metodologia" className="py-16 md:py-20">
       <div className="section-container">
         <AnimatedSection>
-          <h2 className="section-title">O Caminho do Lucro</h2>
-          <p className="section-subtitle">
+          <h2 className="section-title text-white">O Caminho do Lucro</h2>
+          <p className="section-subtitle text-white/90">
             Nossa metodologia foi desenvolvida para transformar caos em clareza financeira
           </p>
         </AnimatedSection>
@@ -48,7 +48,7 @@ const MethodologySection = () => {
         {/* Versão em cards para dispositivos móveis ou como complemento */}
         <div className="relative mt-12 md:mt-16">
           {/* Linha conectora (para desktop) */}
-          <div className="absolute top-24 left-0 right-0 h-1 bg-improve/30 hidden lg:block"></div>
+          <div className="absolute top-24 left-0 right-0 h-1 bg-white/30 hidden lg:block"></div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6 lg:gap-8">
             {steps.map((step, index) => {
@@ -60,15 +60,15 @@ const MethodologySection = () => {
                   delay={index * 150} 
                   className="relative"
                 >
-                  <Card className="h-full border border-gray-100 shadow-md hover:shadow-lg transition-all duration-300 px-4 py-5 md:p-6">
+                  <Card className="h-full border border-white/20 shadow-md hover:shadow-lg transition-all duration-300 px-4 py-5 md:p-6 bg-white/10 backdrop-blur-sm">
                     <div className="flex flex-col h-full">
-                      <div className={`w-12 h-12 md:w-14 md:h-14 rounded-full text-improve-black font-bold text-xl flex items-center justify-center mb-4 md:mb-6 lg:mx-auto ${index < 3 ? 'bg-improve' : index === 3 ? 'bg-gray-500' : 'bg-improve-black text-white'}`}>
+                      <div className={`w-12 h-12 md:w-14 md:h-14 rounded-full text-primary font-bold text-xl flex items-center justify-center mb-4 md:mb-6 lg:mx-auto ${index < 3 ? 'bg-white' : index === 3 ? 'bg-gray-300' : 'bg-white'}`}>
                         {step.number}
                       </div>
                       <div className="lg:text-center">
-                        <IconComponent className={`h-7 w-7 md:h-8 md:w-8 mb-3 md:mb-4 lg:mx-auto ${index < 3 ? 'text-improve' : index === 3 ? 'text-gray-500' : 'text-improve-black'}`} />
-                        <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3">{step.title}</h3>
-                        <p className="text-sm md:text-base text-gray-600">{step.description}</p>
+                        <IconComponent className={`h-7 w-7 md:h-8 md:w-8 mb-3 md:mb-4 lg:mx-auto ${index < 3 ? 'text-white' : index === 3 ? 'text-white/70' : 'text-white'}`} />
+                        <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3 text-white">{step.title}</h3>
+                        <p className="text-sm md:text-base text-white/90">{step.description}</p>
                       </div>
                     </div>
                   </Card>

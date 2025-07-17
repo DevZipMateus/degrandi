@@ -23,11 +23,11 @@ const ProblemsSection = () => {
   ];
 
   return (
-    <section id="problemas" className="py-24" style={{ background: 'hsl(var(--section-bg))' }}>
+    <section id="problemas" className="py-24">
       <div className="section-container">
         <AnimatedSection>
-          <h2 className="section-title">Isso soa familiar?</h2>
-          <p className="section-subtitle">
+          <h2 className="section-title text-white">Isso soa familiar?</h2>
+          <p className="section-subtitle text-white/90">
             Problemas comuns que ajudamos empresários a resolver diariamente
           </p>
         </AnimatedSection>
@@ -47,7 +47,7 @@ const ProblemsSection = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">{problem.title}</h3>
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">{problem.title}</h3>
                   <p className="text-gray-600">{problem.description}</p>
                 </div>
               </div>
