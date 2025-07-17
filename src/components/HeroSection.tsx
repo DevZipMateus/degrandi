@@ -1,6 +1,7 @@
 
 import AnimatedSection from './AnimatedSection';
 import { ChevronRight, Calculator, FileText, Users } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -40,10 +41,10 @@ const HeroSection = () => {
                 Fale Conosco
                 <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </a>
-              <a href="#servicos" className="btn-secondary flex items-center justify-center gap-2">
+              <Link to="/servicos" className="btn-secondary flex items-center justify-center gap-2">
                 Nossos Serviços
                 <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5" />
-              </a>
+              </Link>
             </div>
 
             {/* Features */}
