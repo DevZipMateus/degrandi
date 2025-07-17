@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '@/components/Header';
@@ -8,31 +7,20 @@ import AnimatedSection from '@/components/AnimatedSection';
 import ContactForm from '@/components/ContactForm';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Building2 } from 'lucide-react';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 const TrazerSuaEmpresaPage = () => {
   const navigate = useNavigate();
-
   useEffect(() => {
     document.title = 'Migrar Sua Empresa - Escritório Contábil De Grandi';
-    
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', 'Migre sua empresa para o Escritório Contábil De Grandi. Oferecemos migração completa e serviços contábeis especializados em Gaurama/RS.');
     }
   }, []);
-
   const handleGoBack = () => {
     navigate('/');
   };
-
-  return (
-    <div className="flex flex-col min-h-screen bg-background">
+  return <div className="flex flex-col min-h-screen bg-background">
       <Header />
       <main className="flex-grow pt-16 sm:pt-20">
         {/* Hero Section */}
@@ -45,7 +33,7 @@ const TrazerSuaEmpresaPage = () => {
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6">
                 Migrar Sua Empresa
               </h1>
-              <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-3xl mx-auto text-zinc-950">
                 Deseja migrar a contabilidade da sua empresa? Preencha o formulário que entraremos em contato com você.
               </p>
             </AnimatedSection>
@@ -64,7 +52,7 @@ const TrazerSuaEmpresaPage = () => {
                   </div>
                   <div>
                     <h3 className="text-lg sm:text-xl font-semibold mb-1 sm:mb-2">Cadastro</h3>
-                    <p className="text-sm sm:text-base text-muted-foreground">
+                    <p className="text-sm sm:text-base text-zinc-950">
                       Deixe seus dados, nós entraremos em contato.
                     </p>
                   </div>
@@ -75,7 +63,7 @@ const TrazerSuaEmpresaPage = () => {
                   </div>
                   <div>
                     <h3 className="text-lg sm:text-xl font-semibold mb-1 sm:mb-2">Documentos</h3>
-                    <p className="text-sm sm:text-base text-muted-foreground">
+                    <p className="text-sm sm:text-base text-zinc-950">
                       Nos envie a documentação solicitada, e assine os contratos.
                     </p>
                   </div>
@@ -86,7 +74,7 @@ const TrazerSuaEmpresaPage = () => {
                   </div>
                   <div>
                     <h3 className="text-lg sm:text-xl font-semibold mb-1 sm:mb-2">Daremos entrada</h3>
-                    <p className="text-sm sm:text-base text-muted-foreground">
+                    <p className="text-sm sm:text-base text-zinc-950">
                       Cuidamos de tudo, você aguarda.
                     </p>
                   </div>
@@ -97,7 +85,7 @@ const TrazerSuaEmpresaPage = () => {
                   </div>
                   <div>
                     <h3 className="text-lg sm:text-xl font-semibold mb-1 sm:mb-2">Check</h3>
-                    <p className="text-sm sm:text-base text-muted-foreground">
+                    <p className="text-sm sm:text-base text-zinc-950">
                       Seu CNPJ em mãos.
                     </p>
                   </div>
@@ -111,7 +99,7 @@ const TrazerSuaEmpresaPage = () => {
         <section className="spacing-section-sm bg-muted/50">
           <div className="section-container">
             <AnimatedSection animation="fade-in-up" className="max-w-4xl mx-auto text-center">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-zinc-950">
                 Quer saber quanto custa para cuidarmos da contabilidade da sua empresa?
               </h2>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8">
@@ -193,11 +181,7 @@ const TrazerSuaEmpresaPage = () => {
         <section className="spacing-section-sm">
           <div className="section-container">
             <div className="text-center">
-              <Button 
-                onClick={handleGoBack}
-                variant="outline"
-                className="inline-flex items-center gap-2"
-              >
+              <Button onClick={handleGoBack} variant="outline" className="inline-flex items-center gap-2">
                 <ArrowLeft className="h-4 w-4" />
                 Voltar para a Página Principal
               </Button>
@@ -207,8 +191,6 @@ const TrazerSuaEmpresaPage = () => {
       </main>
       <Footer />
       <WhatsAppButton />
-    </div>
-  );
+    </div>;
 };
-
 export default TrazerSuaEmpresaPage;
