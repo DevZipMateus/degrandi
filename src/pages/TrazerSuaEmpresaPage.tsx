@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '@/components/Header';
@@ -40,9 +39,9 @@ const TrazerSuaEmpresaPage = () => {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
       <Header />
-      <main className="flex-grow pt-0">
+      <main className="flex-grow main-content">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary to-primary/80 text-white spacing-section">
+        <section className="bg-gradient-to-br from-primary to-primary/80 text-white first-section-after-header">
           <div className="section-container">
             <AnimatedSection animation="fade-in-up" className="text-center max-w-5xl mx-auto">
               <div className="flex justify-center mb-4 sm:mb-6">

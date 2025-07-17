@@ -42,6 +42,10 @@
 
     /* Background azul #0e5dba para seções */
     --section-bg: 218 89% 39%;
+    
+    /* Header height variables for consistent spacing */
+    --header-height-normal: 4rem;
+    --header-height-scrolled: 3.5rem;
   }
 
   .dark {
@@ -115,6 +119,19 @@
 
   .section-container {
     @apply max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10;
+  }
+
+  /* Header-aware spacing utilities */
+  .main-content {
+    @apply pt-16 sm:pt-20 md:pt-24;
+  }
+
+  .section-with-header-offset {
+    @apply pt-8 sm:pt-10 md:pt-12 lg:pt-16 xl:pt-20 2xl:pt-24;
+  }
+
+  .first-section-after-header {
+    @apply pt-4 sm:pt-6 md:pt-8 lg:pt-12 xl:pt-16;
   }
 
   .section-title {

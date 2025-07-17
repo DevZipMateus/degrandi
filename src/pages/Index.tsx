@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
@@ -13,7 +12,7 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 
 const Index = () => {
   useEffect(() => {
-    // Smooth scroll implementation
+    // Smooth scroll implementation with updated offset for header
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -24,8 +23,10 @@ const Index = () => {
         const targetElement = document.getElementById(targetId);
         if (!targetElement) return;
 
+        // Updated offset to account for varying header heights
+        const headerOffset = window.innerWidth >= 768 ? 96 : 80;
         window.scrollTo({
-          top: targetElement.offsetTop - 80, // offset for fixed header
+          top: targetElement.offsetTop - headerOffset,
           behavior: 'smooth'
         });
       });
@@ -75,7 +76,7 @@ const Index = () => {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
       <Header />
-      <main className="flex-grow pt-0">
+      <main className="flex-grow main-content">
         <HeroSection />
         <CTAButtons />
         <AboutSection />
