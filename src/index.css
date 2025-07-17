@@ -16,16 +16,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* Primary color - novo azul #5897fc */
-    --primary: 220 96% 65%;
+    /* Primary color - novo azul #0e5dba */
+    --primary: 218 89% 39%;
     --primary-foreground: 210 40% 98%;
 
     /* Secondary color - azul mais escuro */
-    --secondary: 220 75% 50%;
+    --secondary: 218 89% 30%;
     --secondary-foreground: 0 0% 98%;
 
     /* Accent color - azul ainda mais escuro para contraste */
-    --accent: 220 60% 40%;
+    --accent: 218 89% 25%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
@@ -36,7 +36,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 220 75% 50%;
+    --ring: 218 89% 39%;
 
     --radius: 0.75rem;
 
@@ -54,7 +54,7 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 220 96% 65%;
+    --primary: 218 89% 39%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -71,7 +71,7 @@
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 220 75% 50%;
+    --ring: 218 89% 39%;
 
     --section-bg: 198 100% 77%;
   }
