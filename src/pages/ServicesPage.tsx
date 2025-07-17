@@ -2,8 +2,9 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
-import { Building, Users, Calculator, FileText, UserCheck, Briefcase } from 'lucide-react';
+import { Building, Users, Calculator, FileText, UserCheck, Briefcase, ArrowLeft } from 'lucide-react';
 import AnimatedSection from '@/components/AnimatedSection';
+import { Link } from 'react-router-dom';
 
 const ServicesPage = () => {
   const phoneNumber = "5433911010";
@@ -89,6 +90,13 @@ const ServicesPage = () => {
                 );
               })}
             </div>
+
+            <AnimatedSection className="text-center mt-10 md:mt-12">
+              <Link to="/" className="btn-secondary inline-flex items-center gap-2">
+                <ArrowLeft className="h-4 w-4" />
+                Voltar
+              </Link>
+            </AnimatedSection>
           </div>
         </section>
       </main>
