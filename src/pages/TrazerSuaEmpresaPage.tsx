@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '@/components/Header';
@@ -9,10 +8,8 @@ import ContactForm from '@/components/ContactForm';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Building2, FileText, Users, CheckCircle, Pencil, ArrowLeft } from 'lucide-react';
-
 const TrazerSuaEmpresaPage = () => {
   const navigate = useNavigate();
-
   useEffect(() => {
     // Schema.org for SEO
     const schema = {
@@ -22,25 +19,20 @@ const TrazerSuaEmpresaPage = () => {
       'description': 'Migre sua empresa para o Escritório Contábil De Grandi. Oferecemos migração completa e serviços contábeis especializados em Gaurama/RS.',
       'url': window.location.href
     };
-
     const scriptElement = document.createElement('script');
     scriptElement.type = 'application/ld+json';
     scriptElement.text = JSON.stringify(schema);
     document.head.appendChild(scriptElement);
-
     return () => {
       if (document.head.contains(scriptElement)) {
         document.head.removeChild(scriptElement);
       }
     };
   }, []);
-
   const handleGoBack = () => {
     navigate('/');
   };
-
-  return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
+  return <div className="flex flex-col min-h-screen overflow-hidden">
       <Header />
       <main className="flex-grow pt-0">
         {/* Hero Section */}
@@ -141,7 +133,7 @@ const TrazerSuaEmpresaPage = () => {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 Perguntas Frequentes sobre Migração
               </h2>
-              <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              <p className="text-lg max-w-2xl mx-auto text-zinc-950">
                 Mas se ficar com alguma dúvida entre em contato com a gente.
               </p>
             </AnimatedSection>
@@ -277,11 +269,7 @@ const TrazerSuaEmpresaPage = () => {
         <section className="py-8 bg-background">
           <div className="container mx-auto px-4">
             <AnimatedSection animation="fade-in-up" className="text-center">
-              <Button 
-                onClick={handleGoBack}
-                variant="outline"
-                className="inline-flex items-center gap-2"
-              >
+              <Button onClick={handleGoBack} variant="outline" className="inline-flex items-center gap-2">
                 <ArrowLeft className="h-4 w-4" />
                 Voltar
               </Button>
@@ -291,8 +279,6 @@ const TrazerSuaEmpresaPage = () => {
       </main>
       <Footer />
       <WhatsAppButton />
-    </div>
-  );
+    </div>;
 };
-
 export default TrazerSuaEmpresaPage;
