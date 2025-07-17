@@ -8,8 +8,10 @@ import ContactForm from '@/components/ContactForm';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Building2, FileText, Users, CheckCircle, Pencil, ArrowLeft } from 'lucide-react';
+
 const TrazerSuaEmpresaPage = () => {
   const navigate = useNavigate();
+
   useEffect(() => {
     // Schema.org for SEO
     const schema = {
@@ -29,10 +31,13 @@ const TrazerSuaEmpresaPage = () => {
       }
     };
   }, []);
+
   const handleGoBack = () => {
     navigate('/');
   };
-  return <div className="flex flex-col min-h-screen overflow-hidden">
+
+  return (
+    <div className="flex flex-col min-h-screen overflow-hidden">
       <Header />
       <main className="flex-grow pt-0">
         {/* Hero Section */}
@@ -55,13 +60,13 @@ const TrazerSuaEmpresaPage = () => {
         </section>
 
         {/* Steps Section */}
-        <section className="py-16 bg-background">
+        <section className="py-16">
           <div className="container mx-auto px-4">
             <AnimatedSection animation="fade-in-up" className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl font-bold text-white mb-4">
                 Como Funciona
               </h2>
-              <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              <p className="text-white/80 text-lg max-w-2xl mx-auto">
                 Nosso processo simplificado em 4 etapas para migrar sua empresa
               </p>
             </AnimatedSection>
@@ -69,13 +74,13 @@ const TrazerSuaEmpresaPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <AnimatedSection animation="fade-in-up" delay={100}>
                 <div className="text-center">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                    <Pencil className="h-8 w-8 text-primary" />
+                  <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6">
+                    <Pencil className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  <h3 className="text-xl font-semibold text-white mb-4">
                     Cadastro
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-white/80">
                     Deixe seus dados, nós entraremos em contato
                   </p>
                 </div>
@@ -83,13 +88,13 @@ const TrazerSuaEmpresaPage = () => {
 
               <AnimatedSection animation="fade-in-up" delay={200}>
                 <div className="text-center">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                    <FileText className="h-8 w-8 text-primary" />
+                  <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6">
+                    <FileText className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  <h3 className="text-xl font-semibold text-white mb-4">
                     Documentos
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-white/80">
                     Nos envie a documentação solicitada, e assine os contratos
                   </p>
                 </div>
@@ -97,13 +102,13 @@ const TrazerSuaEmpresaPage = () => {
 
               <AnimatedSection animation="fade-in-up" delay={300}>
                 <div className="text-center">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                    <Users className="h-8 w-8 text-primary" />
+                  <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6">
+                    <Users className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  <h3 className="text-xl font-semibold text-white mb-4">
                     Daremos entrada
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-white/80">
                     Cuidamos de tudo, você aguarda
                   </p>
                 </div>
@@ -111,13 +116,13 @@ const TrazerSuaEmpresaPage = () => {
 
               <AnimatedSection animation="fade-in-up" delay={400}>
                 <div className="text-center">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                    <CheckCircle className="h-8 w-8 text-primary" />
+                  <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6">
+                    <CheckCircle className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  <h3 className="text-xl font-semibold text-white mb-4">
                     Check
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-white/80">
                     Seu CNPJ em mãos
                   </p>
                 </div>
@@ -127,13 +132,13 @@ const TrazerSuaEmpresaPage = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-muted/30">
+        <section className="py-16">
           <div className="container mx-auto px-4">
             <AnimatedSection animation="fade-in-up" className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl font-bold text-white mb-4">
                 Perguntas Frequentes sobre Migração
               </h2>
-              <p className="text-lg max-w-2xl mx-auto text-zinc-950">
+              <p className="text-lg max-w-2xl mx-auto text-white/80">
                 Mas se ficar com alguma dúvida entre em contato com a gente.
               </p>
             </AnimatedSection>
@@ -251,13 +256,13 @@ const TrazerSuaEmpresaPage = () => {
         </section>
 
         {/* Contact Form Section */}
-        <section className="py-16 bg-background">
+        <section className="py-16">
           <div className="container mx-auto px-4">
             <AnimatedSection animation="fade-in-up" className="text-center max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl font-bold text-white mb-6">
                 Quer saber quanto custa para cuidarmos da contabilidade da sua empresa?
               </h2>
-              <p className="text-gray-600 text-lg mb-12">
+              <p className="text-white/80 text-lg mb-12">
                 Preencha o formulário abaixo que em breve entraremos em contato.
               </p>
               <ContactForm />
@@ -266,10 +271,10 @@ const TrazerSuaEmpresaPage = () => {
         </section>
 
         {/* Back Button Section */}
-        <section className="py-8 bg-background">
+        <section className="py-8">
           <div className="container mx-auto px-4">
             <AnimatedSection animation="fade-in-up" className="text-center">
-              <Button onClick={handleGoBack} variant="outline" className="inline-flex items-center gap-2">
+              <Button onClick={handleGoBack} variant="outline" className="inline-flex items-center gap-2 bg-white text-primary hover:bg-white/90">
                 <ArrowLeft className="h-4 w-4" />
                 Voltar
               </Button>
@@ -279,6 +284,8 @@ const TrazerSuaEmpresaPage = () => {
       </main>
       <Footer />
       <WhatsAppButton />
-    </div>;
+    </div>
+  );
 };
+
 export default TrazerSuaEmpresaPage;
