@@ -1,7 +1,6 @@
-
 import { useState } from 'react';
 import AnimatedSection from './AnimatedSection';
-import { MapPin, Phone, Mail, MessageSquare } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 
 interface ContactFormData {
   name: string;
@@ -236,7 +235,11 @@ ${formData.message}`;
                     type="submit" 
                     className="w-full md:w-auto btn-primary text-lg py-4 px-8 flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white rounded-md transition-colors"
                   >
-                    <MessageSquare className="h-5 w-5" />
+                    <img 
+                      src="/lovable-uploads/42312968-cec5-40e7-8f92-7a6f3fc4e80e.png" 
+                      alt="WhatsApp" 
+                      className="h-5 w-5"
+                    />
                     Enviar via WhatsApp
                   </button>
                 </div>
