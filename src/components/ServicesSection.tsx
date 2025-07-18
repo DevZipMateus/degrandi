@@ -56,7 +56,7 @@ const ServicesSection = () => {
     },
     {
       icon: DollarSign,
-      title: "Financiamento",
+      title: "Financiamento habitacional",
       description: "Oferecemos consultoria e assessoria para obtenção de financiamentos empresariais, análise de linhas de crédito disponíveis e elaboração de projetos para apresentação a instituições financeiras."
     },
     {
