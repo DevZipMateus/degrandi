@@ -28,7 +28,7 @@ const HeroSection = () => {
       <div className="section-container z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           <AnimatedSection animation="fade-in-up" className="text-left">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 sm:mb-6 text-gray-900">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 sm:mb-6 text-gray-900 font-professional">
               Escritório Contábil <span className="text-gray-800">De Grandi</span>
             </h1>
             
