@@ -87,7 +87,7 @@ const HeroSection = () => {
                 <img 
                   alt="Escritório Contábil De Grandi - Serviços profissionais de contabilidade" 
                   className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]" 
-                  src="/lovable-uploads/bac91a17-e045-4932-92cb-724568fb439d.png" 
+                  src="/lovable-uploads/010900fe-8304-457a-9438-4f38f6a3059c.png" 
                 />
               </div>
               <div className="absolute -bottom-5 sm:-bottom-10 -right-5 sm:-right-10 w-24 sm:w-32 md:w-48 h-24 sm:h-32 md:h-48 bg-primary/10 rounded-full filter blur-3xl"></div>
