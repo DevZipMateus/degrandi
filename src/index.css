@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
@@ -16,16 +15,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* Primary color - novo azul #0e5dba */
-    --primary: 218 89% 39%;
+    /* Primary color - novo azul #0542A4 */
+    --primary: 221 95% 33%;
     --primary-foreground: 210 40% 98%;
 
     /* Secondary color - azul mais escuro */
-    --secondary: 218 89% 30%;
+    --secondary: 221 95% 25%;
     --secondary-foreground: 0 0% 98%;
 
     /* Accent color - azul ainda mais escuro para contraste */
-    --accent: 218 89% 25%;
+    --accent: 221 95% 20%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
@@ -36,12 +35,12 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 218 89% 39%;
+    --ring: 221 95% 33%;
 
     --radius: 0.75rem;
 
-    /* Background azul #0e5dba para seções */
-    --section-bg: 218 89% 39%;
+    /* Background azul #0542A4 para seções */
+    --section-bg: 221 95% 33%;
     
     /* Header height variables for consistent spacing */
     --header-height-normal: 4rem;
@@ -58,7 +57,7 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 218 89% 39%;
+    --primary: 221 95% 33%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -75,9 +74,9 @@
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 218 89% 39%;
+    --ring: 221 95% 33%;
 
-    --section-bg: 218 89% 39%;
+    --section-bg: 221 95% 33%;
   }
 }
 
