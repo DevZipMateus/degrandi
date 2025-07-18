@@ -60,7 +60,7 @@ const MobileMenuPanel = ({ isMenuOpen, onClose, menuItems }: MobileMenuPanelProp
                   className={cn(
                     "text-base sm:text-lg lg:text-xl font-medium text-gray-800 hover:text-primary transition-all duration-200 block py-2 sm:py-2.5",
                     "hover:translate-x-1 hover:scale-[1.02] focus:outline-none focus:text-primary rounded-md px-2 sm:px-3",
-                    item.name === 'Contato' && 'bg-primary text-white hover:bg-primary/90 hover:text-white'
+                    item.name === 'Contato' && 'bg-primary !text-white hover:bg-primary/90 hover:!text-white'
                   )}
                   onClick={onClose}
                 >
@@ -72,7 +72,7 @@ const MobileMenuPanel = ({ isMenuOpen, onClose, menuItems }: MobileMenuPanelProp
                   className={cn(
                     "text-base sm:text-lg lg:text-xl font-medium text-gray-800 hover:text-primary transition-all duration-200 block py-2 sm:py-2.5",
                     "hover:translate-x-1 hover:scale-[1.02] focus:outline-none focus:text-primary rounded-md px-2 sm:px-3",
-                    item.name === 'Contato' && 'bg-primary text-white hover:bg-primary/90 hover:text-white'
+                    item.name === 'Contato' && 'bg-primary !text-white hover:bg-primary/90 hover:!text-white'
                   )}
                   onClick={(e) => {
                     if (item.href.startsWith('/#')) {

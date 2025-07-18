@@ -42,7 +42,7 @@ const DesktopNavigation = ({ menuItems, scrolled }: DesktopNavigationProps) => {
                   'after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0',
                   'after:bg-primary after:transition-all after:duration-300',
                   'hover:after:w-full focus:after:w-full',
-                  item.name === 'Contato' && 'btn-primary'
+                  item.name === 'Contato' && 'btn-primary !text-white hover:!text-white focus:!text-white'
                 )}
               >
                 {item.name}
@@ -67,7 +67,7 @@ const DesktopNavigation = ({ menuItems, scrolled }: DesktopNavigationProps) => {
                   'after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0',
                   'after:bg-primary after:transition-all after:duration-300',
                   'hover:after:w-full focus:after:w-full',
-                  item.name === 'Contato' && 'btn-primary'
+                  item.name === 'Contato' && 'btn-primary !text-white hover:!text-white focus:!text-white'
                 )}
               >
                 {item.name}
