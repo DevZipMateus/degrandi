@@ -1,4 +1,3 @@
-
 import { Building, Users, Calculator, FileText, UserCheck, Briefcase, Home, Landmark, Truck, Shield, DollarSign, TreePine, Building2 } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
@@ -11,7 +10,7 @@ const ServicesSection = () => {
     },
     {
       icon: Users,
-      title: "Consultoria",
+      title: "Consultoria", 
       description: "Prestamos assessoria a pessoas físicas e jurídicas sobre questões tributárias, legislação empresarial, tributária (IRPJ, ICMS, PIS COFINS, IPI, ITR) e trabalhista (INSS, FGTS e MTb), garantindo compliance e otimização fiscal."
     },
     {
@@ -56,7 +55,7 @@ const ServicesSection = () => {
     },
     {
       icon: DollarSign,
-      title: "Financiamento habitacional",
+      title: "Financiamento Habitacional",
       description: "Oferecemos consultoria e assessoria para obtenção de financiamentos empresariais, análise de linhas de crédito disponíveis e elaboração de projetos para apresentação a instituições financeiras."
     },
     {

@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
@@ -68,7 +67,7 @@ const ServicesPage = () => {
     },
     {
       icon: DollarSign,
-      title: "Financiamento",
+      title: "Financiamento Habitacional",
       description: "Oferecemos consultoria e assessoria para obtenção de financiamentos empresariais, análise de linhas de crédito disponíveis e elaboração de projetos para apresentação a instituições financeiras."
     },
     {
