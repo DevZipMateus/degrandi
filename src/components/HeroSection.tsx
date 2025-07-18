@@ -1,3 +1,4 @@
+
 import AnimatedSection from './AnimatedSection';
 import { ChevronRight, Calculator, FileText, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -27,12 +28,12 @@ const HeroSection = () => {
       <div className="section-container z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           <AnimatedSection animation="fade-in-up" className="text-left">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold leading-tight mb-4 sm:mb-6 text-gray-900 font-professional">
+            <h1 className="heading-1 mb-4 sm:mb-6 text-gray-900 font-professional">
               Escritório Contábil <span className="text-gray-800 whitespace-nowrap">De Grandi</span>
             </h1>
             
-            <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-6 sm:mb-8 leading-relaxed">
-              Serviços contábeis completos. Cuidamos da contabilidade da sua empresa com excelência e segurança há mais de 40 anos.
+            <p className="body-large text-gray-700 mb-6 sm:mb-8">
+              Serviços contábeis completos e especializados. Cuidamos da contabilidade da sua empresa com excelência, segurança e tradição comprovada há mais de 40 anos no mercado.
             </p>
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mb-8 sm:mb-12">
@@ -53,8 +54,8 @@ const HeroSection = () => {
                   <Calculator className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 text-sm sm:text-base">Contabilidade</h3>
-                  <p className="text-xs sm:text-sm text-gray-600">Completa e precisa</p>
+                  <h3 className="heading-4 text-gray-900">Contabilidade</h3>
+                  <p className="body-small text-gray-600">Completa e precisa</p>
                 </div>
               </div>
               
@@ -63,8 +64,8 @@ const HeroSection = () => {
                   <FileText className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 text-sm sm:text-base">Assessoria</h3>
-                  <p className="text-xs sm:text-sm text-gray-600">Personalizada</p>
+                  <h3 className="heading-4 text-gray-900">Assessoria</h3>
+                  <p className="body-small text-gray-600">Personalizada</p>
                 </div>
               </div>
               
@@ -73,8 +74,8 @@ const HeroSection = () => {
                   <Users className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 text-sm sm:text-base">Atendimento</h3>
-                  <p className="text-xs sm:text-sm text-gray-600">Especializado</p>
+                  <h3 className="heading-4 text-gray-900">Atendimento</h3>
+                  <p className="body-small text-gray-600">Especializado</p>
                 </div>
               </div>
             </div>

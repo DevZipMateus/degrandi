@@ -7,32 +7,32 @@ const ServicesSection = () => {
     {
       icon: Building,
       title: "Condomínios",
-      description: "Ajudamos sua empresa a implementar novas soluções na gestão de pessoas"
+      description: "Ajudamos sua empresa a implementar novas soluções na gestão de pessoas, proporcionando eficiência e controle adequado dos processos administrativos."
     },
     {
       icon: Users,
       title: "Consultoria",
-      description: "Prestamos assessoria a pessoas físicas e jurídicas sobre questões tributárias, legislação empresarial, tributária (IRPJ, ICMS, PIS COFINS, IPI, ITR) e trabalhista (INSS, FGTS e MTb)."
+      description: "Prestamos assessoria a pessoas físicas e jurídicas sobre questões tributárias, legislação empresarial, tributária (IRPJ, ICMS, PIS COFINS, IPI, ITR) e trabalhista (INSS, FGTS e MTb), garantindo compliance e otimização fiscal."
     },
     {
       icon: Calculator,
       title: "Contabilidade",
-      description: "A escrituração contábil é planejada e executada de acordo com as Normas Internacionais de Contabilidade – IFRS, adequadas à individualidade de cada empresa e às características das atividades desenvolvidas."
+      description: "A escrituração contábil é planejada e executada de acordo com as Normas Internacionais de Contabilidade – IFRS, adequadas à individualidade de cada empresa e às características das atividades desenvolvidas, assegurando precisão e conformidade."
     },
     {
       icon: FileText,
       title: "Legalização de Empresas",
-      description: "Neste setor são elaborados instrumentos de constituição de empresas, tais como contrato social e atas, alterações de contratos, baixa de empresas, serviços de parcelamento de impostos, certidões e serviços auxiliares junto a todos os órgão públicos."
+      description: "Neste setor são elaborados instrumentos de constituição de empresas, tais como contrato social e atas, alterações de contratos, baixa de empresas, serviços de parcelamento de impostos, certidões e serviços auxiliares junto a todos os órgãos públicos."
     },
     {
       icon: UserCheck,
       title: "Recursos Humanos",
-      description: "Abrange todos os serviços relacionados a folha de pagamento e manutenção do cadastro de funcionários, assim como registro dos funcionários, de forma integrada."
+      description: "Abrange todos os serviços relacionados à folha de pagamento e manutenção do cadastro de funcionários, assim como registro dos funcionários, de forma integrada e em conformidade com a legislação trabalhista vigente."
     },
     {
       icon: Briefcase,
       title: "Serviços Contábeis",
-      description: "Com amplo conhecimento na área empresarial, contamos com uma excelente equipe de consultores para melhor atende-los independente de qual a sua necessidade."
+      description: "Com amplo conhecimento na área empresarial, contamos com uma excelente equipe de consultores para melhor atendê-los independente de qual seja a sua necessidade, oferecendo soluções personalizadas e eficazes."
     }
   ];
 
@@ -57,11 +57,11 @@ const ServicesSection = () => {
                 delay={index * 100}
               >
                 <div className="card-feature h-full">
-                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-lg bg-white/20 flex items-center justify-center mb-4 md:mb-6">
-                    <IconComponent className="h-6 w-6 md:h-7 md:w-7 text-white" />
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4 md:mb-6">
+                    <IconComponent className="h-6 w-6 md:h-7 md:w-7 text-primary" />
                   </div>
-                  <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3 text-gray-900">{service.title}</h3>
-                  <p className="text-sm md:text-base text-gray-600">{service.description}</p>
+                  <h3 className="heading-4 text-gray-900 mb-3 md:mb-4">{service.title}</h3>
+                  <p className="body-medium text-gray-600">{service.description}</p>
                 </div>
               </AnimatedSection>
             );

@@ -182,7 +182,16 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
   }
 
-  /* Responsive text utilities */
+  /* Typography utilities with proper text formatting */
+  .text-justified {
+    @apply text-justify hyphens-auto;
+    text-align-last: left;
+  }
+
+  .text-balanced {
+    text-wrap: balance;
+  }
+
   .text-responsive-xs {
     @apply text-xs sm:text-sm md:text-base;
   }
@@ -243,33 +252,47 @@
     @apply block text-xs sm:text-sm md:text-base font-medium text-gray-700 mb-1 sm:mb-2;
   }
 
-  /* Typography responsive utilities */
+  /* Typography responsive utilities with justified text */
   .heading-1 {
-    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold leading-tight;
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold leading-tight text-balanced;
   }
 
   .heading-2 {
-    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold leading-tight;
+    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold leading-tight text-balanced;
   }
 
   .heading-3 {
-    @apply text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold leading-tight;
+    @apply text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold leading-tight text-balanced;
   }
 
   .heading-4 {
-    @apply text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-semibold leading-tight;
+    @apply text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-semibold leading-tight text-balanced;
   }
 
   .body-large {
-    @apply text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed;
+    @apply text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-justified;
   }
 
   .body-medium {
-    @apply text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed;
+    @apply text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed text-justified;
   }
 
   .body-small {
-    @apply text-xs sm:text-sm md:text-base leading-relaxed;
+    @apply text-xs sm:text-sm md:text-base leading-relaxed text-justified;
+  }
+
+  /* Specialized text classes for better typography */
+  .paragraph-justified {
+    @apply text-justify hyphens-auto leading-relaxed;
+    text-align-last: left;
+  }
+
+  .title-centered {
+    @apply text-center font-bold text-balanced;
+  }
+
+  .subtitle-centered {
+    @apply text-center text-balanced;
   }
 }
 
