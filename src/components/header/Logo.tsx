@@ -7,7 +7,7 @@ const Logo = () => {
       <img 
         alt="Escritório Contábil De Grandi" 
         className="h-14 md:h-16" 
-        src="/lovable-uploads/c2cc8633-a51b-4fe0-b8d0-338ec56dd30b.png" 
+        src="/lovable-uploads/4e888e7c-fee8-4965-9106-cca09d55bd92.png" 
       />
     </Link>
   );
