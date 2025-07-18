@@ -32,7 +32,7 @@ const NewsSection = () => {
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title">Notícias e Conteúdos</h2>
-          <p className="section-subtitle">
+          <p className="section-subtitle text-balanced">
             Fique por dentro das novidades e informações relevantes para o seu negócio
           </p>
         </AnimatedSection>

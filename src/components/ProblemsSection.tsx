@@ -27,7 +27,7 @@ const ProblemsSection = () => {
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title text-white">Isso soa familiar?</h2>
-          <p className="section-subtitle text-white/90">
+          <p className="section-subtitle text-white/90 text-balanced">
             Problemas comuns que ajudamos empresários a resolver diariamente
           </p>
         </AnimatedSection>
@@ -48,7 +48,7 @@ const ProblemsSection = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">{problem.title}</h3>
-                  <p className="text-gray-600">{problem.description}</p>
+                  <p className="text-gray-600 paragraph-justified">{problem.description}</p>
                 </div>
               </div>
             </AnimatedSection>

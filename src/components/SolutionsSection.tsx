@@ -36,7 +36,7 @@ const SolutionsSection = () => {
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title text-white">Mais que relatórios. Entregamos resultados.</h2>
-          <p className="section-subtitle text-white/90">
+          <p className="section-subtitle text-white/90 text-balanced">
             Nossas soluções transformam números em decisões estratégicas para o crescimento do seu negócio
           </p>
         </AnimatedSection>
@@ -56,7 +56,7 @@ const SolutionsSection = () => {
                     <IconComponent className="h-7 w-7 text-white" />
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">{solution.title}</h3>
-                  <p className="text-gray-600">{solution.description}</p>
+                  <p className="text-gray-600 paragraph-justified">{solution.description}</p>
                 </div>
               </AnimatedSection>
             );

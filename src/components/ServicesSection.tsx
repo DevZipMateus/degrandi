@@ -41,7 +41,7 @@ const ServicesSection = () => {
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title text-white">Nossos Serviços</h2>
-          <p className="section-subtitle text-white/90">
+          <p className="section-subtitle text-white/90 text-balanced">
             Soluções contábeis completas para o seu negócio
           </p>
         </AnimatedSection>
@@ -61,7 +61,7 @@ const ServicesSection = () => {
                     <IconComponent className="h-6 w-6 md:h-7 md:w-7 text-primary" />
                   </div>
                   <h3 className="heading-4 text-gray-900 mb-3 md:mb-4">{service.title}</h3>
-                  <p className="body-medium text-gray-600">{service.description}</p>
+                  <p className="body-medium text-gray-600 paragraph-justified">{service.description}</p>
                 </div>
               </AnimatedSection>
             );

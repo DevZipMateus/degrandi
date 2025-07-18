@@ -29,7 +29,7 @@ const ResultsSection = () => {
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title text-white">Resultados que falam por si</h2>
-          <p className="section-subtitle text-white/90">
+          <p className="section-subtitle text-white/90 text-balanced">
             Casos reais de transformação financeira nas empresas que atendemos
           </p>
         </AnimatedSection>
@@ -50,7 +50,7 @@ const ResultsSection = () => {
                   </div>
                   <h3 className="text-2xl font-bold mb-1 text-white">{result.title}</h3>
                   <p className="text-white/80 mb-4 font-medium">{result.period}</p>
-                  <p className="text-white/90">{result.description}</p>
+                  <p className="text-white/90 paragraph-justified">{result.description}</p>
                 </div>
               </AnimatedSection>
             );

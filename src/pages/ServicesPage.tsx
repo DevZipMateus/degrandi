@@ -56,7 +56,7 @@ const ServicesPage = () => {
           <div className="section-container">
             <AnimatedSection>
               <h1 className="section-title text-white">Nossos Serviços</h1>
-              <p className="section-subtitle text-white/90">
+              <p className="section-subtitle text-white/90 text-balanced">
                 Soluções contábeis completas para o seu negócio
               </p>
             </AnimatedSection>
@@ -76,7 +76,7 @@ const ServicesPage = () => {
                         <IconComponent className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 text-white" />
                       </div>
                       <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2 md:mb-3 text-gray-900">{service.title}</h3>
-                      <p className="text-xs sm:text-sm md:text-base text-gray-600 flex-grow mb-3 sm:mb-4 leading-relaxed">
+                      <p className="text-xs sm:text-sm md:text-base text-gray-600 flex-grow mb-3 sm:mb-4 leading-relaxed paragraph-justified">
                         {service.description}
                       </p>
                       <button
