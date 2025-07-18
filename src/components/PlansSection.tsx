@@ -5,7 +5,7 @@ const PlansSection = () => {
   const plans = [{
     title: "Atividade Rural",
     description: "Especializado em atividades rurais e agronegócio",
-    features: ["Contabilidade especializada rural", "Gestão de impostos rurais", "Controle de safras e produção", "Declarações específicas do setor"]
+    features: ["Contabilidade rural especializada ", "Gestão de impostos rurais", "Controle de safras e produção", "Declarações específicas do setor"]
   }, {
     title: "Micro e Pequenas Empresas",
     description: "Soluções completas para pequenos negócios",
