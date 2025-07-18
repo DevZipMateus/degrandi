@@ -3,7 +3,7 @@ import AnimatedSection from './AnimatedSection';
 import { Users, Shield, TrendingUp } from 'lucide-react';
 const PlansSection = () => {
   const plans = [{
-    title: "Contabilidade Rural",
+    title: "Atividade Rural",
     description: "Especializado em atividades rurais e agronegócio",
     features: ["Contabilidade especializada rural", "Gestão de impostos rurais", "Controle de safras e produção", "Declarações específicas do setor"]
   }, {
