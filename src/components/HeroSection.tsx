@@ -33,7 +33,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-6 sm:mb-8 leading-relaxed">
-              Serviços contábeis completos em Gaurama/RS. Cuidamos da contabilidade da sua empresa com excelência e segurança há mais de 20 anos.
+              Serviços contábeis completos. Cuidamos da contabilidade da sua empresa com excelência e segurança há mais de 40 anos.
             </p>
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mb-8 sm:mb-12">
