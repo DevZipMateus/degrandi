@@ -43,9 +43,9 @@
     /* Background azul #0542A4 para seções */
     --section-bg: 221 95% 33%;
     
-    /* Header height variables for consistent spacing */
-    --header-height-normal: 4rem;
-    --header-height-scrolled: 3.5rem;
+    /* Header height variables for consistent spacing - reduced */
+    --header-height-normal: 3rem;
+    --header-height-scrolled: 2.5rem;
   }
 
   .dark {
@@ -121,17 +121,17 @@
     @apply max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10;
   }
 
-  /* Header-aware spacing utilities */
+  /* Header-aware spacing utilities - adjusted for smaller header */
   .main-content {
-    @apply pt-16 sm:pt-20 md:pt-24;
+    @apply pt-12 sm:pt-14 md:pt-16;
   }
 
   .section-with-header-offset {
-    @apply pt-8 sm:pt-10 md:pt-12 lg:pt-16 xl:pt-20 2xl:pt-24;
+    @apply pt-6 sm:pt-8 md:pt-10 lg:pt-12 xl:pt-16 2xl:pt-20;
   }
 
   .first-section-after-header {
-    @apply pt-4 sm:pt-6 md:pt-8 lg:pt-12 xl:pt-16;
+    @apply pt-3 sm:pt-4 md:pt-6 lg:pt-8 xl:pt-12;
   }
 
   .section-title {

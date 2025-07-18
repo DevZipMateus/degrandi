@@ -12,7 +12,7 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 
 const Index = () => {
   useEffect(() => {
-    // Smooth scroll implementation with updated offset for header
+    // Smooth scroll implementation with updated offset for smaller header
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -23,8 +23,8 @@ const Index = () => {
         const targetElement = document.getElementById(targetId);
         if (!targetElement) return;
 
-        // Updated offset to account for varying header heights
-        const headerOffset = window.innerWidth >= 768 ? 96 : 80;
+        // Reduced offset to account for smaller header heights
+        const headerOffset = window.innerWidth >= 768 ? 64 : 56;
         window.scrollTo({
           top: targetElement.offsetTop - headerOffset,
           behavior: 'smooth'

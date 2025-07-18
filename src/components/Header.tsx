@@ -47,8 +47,8 @@ const Header = () => {
     <>
       <header className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-white/95 backdrop-blur-sm shadow-lg py-2 sm:py-3' 
-          : 'py-3 sm:py-4 md:py-5 bg-white/90'
+          ? 'bg-white/95 backdrop-blur-sm shadow-lg py-1 sm:py-1.5' 
+          : 'py-1.5 sm:py-2 md:py-2.5 bg-white/90'
       }`}>
         <div className="section-container flex justify-between items-center">
           <Logo />
