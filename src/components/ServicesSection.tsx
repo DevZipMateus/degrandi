@@ -1,5 +1,5 @@
 
-import { Building, Users, Calculator, FileText, UserCheck, Briefcase } from 'lucide-react';
+import { Building, Users, Calculator, FileText, UserCheck, Briefcase, Home, Landmark, Truck, Shield, DollarSign, TreePine, Building2 } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
 const ServicesSection = () => {
@@ -33,6 +33,41 @@ const ServicesSection = () => {
       icon: Briefcase,
       title: "Serviços Contábeis",
       description: "Com amplo conhecimento na área empresarial, contamos com uma excelente equipe de consultores para melhor atendê-los independente de qual seja a sua necessidade, oferecendo soluções personalizadas e eficazes."
+    },
+    {
+      icon: Building2,
+      title: "Serviço de Regularização de Obras e Construção",
+      description: "Oferecemos assessoria completa para regularização de obras e construções, incluindo documentação necessária, alvará de construção, habite-se e demais procedimentos junto aos órgãos competentes."
+    },
+    {
+      icon: Landmark,
+      title: "Orientação Empresarial",
+      description: "Prestamos orientação estratégica para empresas em diversas áreas, incluindo planejamento tributário, gestão financeira, adequação legal e otimização de processos para o crescimento sustentável do negócio."
+    },
+    {
+      icon: TreePine,
+      title: "Nota Eletrônica para Produtor Rural",
+      description: "Auxiliamos produtores rurais na implementação e gestão de notas eletrônicas, garantindo conformidade fiscal e facilitando a comercialização de produtos agropecuários."
+    },
+    {
+      icon: Home,
+      title: "Imposto de Renda Pessoa Física",
+      description: "Prestamos serviços completos de declaração de imposto de renda para pessoas físicas, incluindo análise de deduções, otimização fiscal e acompanhamento junto à Receita Federal."
+    },
+    {
+      icon: DollarSign,
+      title: "Financiamento",
+      description: "Oferecemos consultoria e assessoria para obtenção de financiamentos empresariais, análise de linhas de crédito disponíveis e elaboração de projetos para apresentação a instituições financeiras."
+    },
+    {
+      icon: Truck,
+      title: "ANTT para Transportadores de Carga e Pessoas",
+      description: "Prestamos serviços completos para registro e regularização junto à ANTT (Agência Nacional de Transportes Terrestres), incluindo licenciamento de transportadores de carga e passageiros."
+    },
+    {
+      icon: Shield,
+      title: "Emissão de Certificados Digital",
+      description: "Facilitamos a emissão de certificados digitais A1 e A3 para pessoas físicas e jurídicas, proporcionando segurança nas transações eletrônicas e assinatura digital de documentos."
     }
   ];
 

@@ -2,7 +2,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
-import { Building, Users, Calculator, FileText, UserCheck, Briefcase, ArrowLeft } from 'lucide-react';
+import { Building, Users, Calculator, FileText, UserCheck, Briefcase, ArrowLeft, Home, Landmark, Truck, Shield, DollarSign, TreePine, Building2 } from 'lucide-react';
 import AnimatedSection from '@/components/AnimatedSection';
 import { Link } from 'react-router-dom';
 
@@ -19,32 +19,67 @@ const ServicesPage = () => {
     {
       icon: Building,
       title: "Condomínios",
-      description: "Ajudamos sua empresa a implementar novas soluções na gestão de pessoas"
+      description: "Ajudamos sua empresa a implementar novas soluções na gestão de pessoas, proporcionando eficiência e controle adequado dos processos administrativos."
     },
     {
       icon: Users,
       title: "Consultoria",
-      description: "Prestamos assessoria a pessoas físicas e jurídicas sobre questões tributárias, legislação empresarial, tributária (IRPJ, ICMS, PIS COFINS, IPI, ITR) e trabalhista (INSS, FGTS e MTb)."
+      description: "Prestamos assessoria a pessoas físicas e jurídicas sobre questões tributárias, legislação empresarial, tributária (IRPJ, ICMS, PIS COFINS, IPI, ITR) e trabalhista (INSS, FGTS e MTb), garantindo compliance e otimização fiscal."
     },
     {
       icon: Calculator,
       title: "Contabilidade",
-      description: "A escrituração contábil é planejada e executada de acordo com as Normas Internacionais de Contabilidade – IFRS, adequadas à individualidade de cada empresa e às características das atividades desenvolvidas."
+      description: "A escrituração contábil é planejada e executada de acordo com as Normas Internacionais de Contabilidade – IFRS, adequadas à individualidade de cada empresa e às características das atividades desenvolvidas, assegurando precisão e conformidade."
     },
     {
       icon: FileText,
       title: "Legalização de Empresas",
-      description: "Neste setor são elaborados instrumentos de constituição de empresas, tais como contrato social e atas, alterações de contratos, baixa de empresas, serviços de parcelamento de impostos, certidões e serviços auxiliares junto a todos os órgão públicos."
+      description: "Neste setor são elaborados instrumentos de constituição de empresas, tais como contrato social e atas, alterações de contratos, baixa de empresas, serviços de parcelamento de impostos, certidões e serviços auxiliares junto a todos os órgãos públicos."
     },
     {
       icon: UserCheck,
       title: "Recursos Humanos",
-      description: "Abrange todos os serviços relacionados a folha de pagamento e manutenção do cadastro de funcionários, assim como registro dos funcionários, de forma integrada."
+      description: "Abrange todos os serviços relacionados à folha de pagamento e manutenção do cadastro de funcionários, assim como registro dos funcionários, de forma integrada e em conformidade com a legislação trabalhista vigente."
     },
     {
       icon: Briefcase,
       title: "Serviços Contábeis",
-      description: "Com amplo conhecimento na área empresarial, contamos com uma excelente equipe de consultores para melhor atende-los independente de qual a sua necessidade."
+      description: "Com amplo conhecimento na área empresarial, contamos com uma excelente equipe de consultores para melhor atendê-los independente de qual seja a sua necessidade, oferecendo soluções personalizadas e eficazes."
+    },
+    {
+      icon: Building2,
+      title: "Serviço de Regularização de Obras e Construção",
+      description: "Oferecemos assessoria completa para regularização de obras e construções, incluindo documentação necessária, alvará de construção, habite-se e demais procedimentos junto aos órgãos competentes."
+    },
+    {
+      icon: Landmark,
+      title: "Orientação Empresarial",
+      description: "Prestamos orientação estratégica para empresas em diversas áreas, incluindo planejamento tributário, gestão financeira, adequação legal e otimização de processos para o crescimento sustentável do negócio."
+    },
+    {
+      icon: TreePine,
+      title: "Nota Eletrônica para Produtor Rural",
+      description: "Auxiliamos produtores rurais na implementação e gestão de notas eletrônicas, garantindo conformidade fiscal e facilitando a comercialização de produtos agropecuários."
+    },
+    {
+      icon: Home,
+      title: "Imposto de Renda Pessoa Física",
+      description: "Prestamos serviços completos de declaração de imposto de renda para pessoas físicas, incluindo análise de deduções, otimização fiscal e acompanhamento junto à Receita Federal."
+    },
+    {
+      icon: DollarSign,
+      title: "Financiamento",
+      description: "Oferecemos consultoria e assessoria para obtenção de financiamentos empresariais, análise de linhas de crédito disponíveis e elaboração de projetos para apresentação a instituições financeiras."
+    },
+    {
+      icon: Truck,
+      title: "ANTT para Transportadores de Carga e Pessoas",
+      description: "Prestamos serviços completos para registro e regularização junto à ANTT (Agência Nacional de Transportes Terrestres), incluindo licenciamento de transportadores de carga e passageiros."
+    },
+    {
+      icon: Shield,
+      title: "Emissão de Certificados Digital",
+      description: "Facilitamos a emissão de certificados digitais A1 e A3 para pessoas físicas e jurídicas, proporcionando segurança nas transações eletrônicas e assinatura digital de documentos."
     }
   ];
 
