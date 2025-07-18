@@ -1,4 +1,3 @@
-
 import AnimatedSection from './AnimatedSection';
 import { ChevronRight, Calculator, FileText, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -86,9 +85,9 @@ const HeroSection = () => {
               <div className="absolute -top-6 sm:-top-12 -left-6 sm:-left-12 w-32 sm:w-48 md:w-64 h-32 sm:h-48 md:h-64 bg-primary/10 rounded-full filter blur-3xl"></div>
               <div className="relative z-10">
                 <img 
-                  alt="Escritório contábil moderno e profissional" 
+                  alt="Escritório Contábil De Grandi - Serviços profissionais de contabilidade" 
                   className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]" 
-                  src="/lovable-uploads/d25da03d-5afa-40a5-8a57-918146997680.jpg" 
+                  src="/lovable-uploads/bac91a17-e045-4932-92cb-724568fb439d.png" 
                 />
               </div>
               <div className="absolute -bottom-5 sm:-bottom-10 -right-5 sm:-right-10 w-24 sm:w-32 md:w-48 h-24 sm:h-32 md:h-48 bg-primary/10 rounded-full filter blur-3xl"></div>
