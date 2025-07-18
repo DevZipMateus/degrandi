@@ -29,7 +29,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           <AnimatedSection animation="fade-in-up" className="text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold leading-tight mb-4 sm:mb-6 text-gray-900 font-professional">
-              Escritório Contábil <span className="text-gray-800">De Grandi</span>
+              Escritório Contábil <span className="text-gray-800 whitespace-nowrap">De Grandi</span>
             </h1>
             
             <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-6 sm:mb-8 leading-relaxed">
