@@ -1,3 +1,4 @@
+
 import { Building, Users, Calculator, FileText, UserCheck, Briefcase, Home, Landmark, Truck, Shield, DollarSign, TreePine, Building2 } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
@@ -31,7 +32,7 @@ const ServicesSection = () => {
     {
       icon: Briefcase,
       title: "Serviços Contábeis",
-      description: "Com amplo conhecimento na área empresarial, contamos com uma excelente equipe de consultores para melhor atendê-los independente de qual seja a sua necessidade, oferecendo soluções personalizadas e eficazes."
+      description: "Com amplo conhecimento na área empresarial, contamos com uma excelente equipe de consultores para melhor atendê-los, independente de qual seja a sua necessidade, oferecendo soluções personalizadas e eficazes."
     },
     {
       icon: Building2,
