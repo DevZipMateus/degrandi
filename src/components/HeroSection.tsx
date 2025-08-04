@@ -25,9 +25,9 @@ const HeroSection = () => {
         ></div>
       </div>
 
-      <div className="section-container z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
-          <AnimatedSection animation="fade-in-up" className="text-left">
+      <div className="section-container z-10 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-16 items-center">
+          <AnimatedSection animation="fade-in-up" className="text-left order-2 lg:order-1">
             <h1 className="heading-1 mb-4 sm:mb-6 text-gray-900 font-sans font-bold">
               Escritório Contábil <span className="text-gray-800 whitespace-nowrap">De Grandi</span>
             </h1>
@@ -36,53 +36,55 @@ const HeroSection = () => {
               Serviços contábeis completos e especializados. Cuidamos da contabilidade da sua empresa com excelência, segurança e tradição comprovada há mais de 40 anos no mercado.
             </p>
             
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mb-8 sm:mb-12">
-              <a href="#contato" className="btn-primary flex items-center justify-center gap-2">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8 md:mb-10">
+              <a href="#contato" className="btn-primary flex items-center justify-center gap-2 text-center">
                 Fale Conosco
                 <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </a>
-              <Link to="/servicos" className="btn-secondary flex items-center justify-center gap-2">
+              <Link to="/servicos" className="btn-secondary flex items-center justify-center gap-2 text-center">
                 Nossos Serviços
                 <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </div>
 
-            {/* Features */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-              <div className="flex items-center gap-3 p-3 rounded-lg bg-white/10 backdrop-blur-sm">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg backdrop-blur-sm flex items-center justify-center bg-slate-50">
-                  <Calculator className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+            {/* Features - Melhorada responsividade */}
+            <div className="w-full">
+              <div className="grid grid-cols-1 gap-3 sm:gap-4">
+                <div className="flex items-center gap-3 p-3 sm:p-4 rounded-lg bg-white/10 backdrop-blur-sm w-full">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex-shrink-0 flex items-center justify-center bg-slate-50">
+                    <Calculator className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="heading-4 text-gray-900 truncate">Contabilidade</h3>
+                    <p className="body-small text-gray-600 truncate">Completa e precisa</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="heading-4 text-gray-900">Contabilidade</h3>
-                  <p className="body-small text-gray-600">Completa e precisa</p>
+                
+                <div className="flex items-center gap-3 p-3 sm:p-4 rounded-lg bg-white/10 backdrop-blur-sm w-full">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex-shrink-0 flex items-center justify-center bg-gray-50">
+                    <FileText className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="heading-4 text-gray-900 truncate">Assessoria</h3>
+                    <p className="body-small text-gray-600 truncate">Personalizada</p>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="flex items-center gap-3 p-3 rounded-lg bg-white/10 backdrop-blur-sm">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg backdrop-blur-sm flex items-center justify-center bg-gray-50">
-                  <FileText className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="heading-4 text-gray-900">Assessoria</h3>
-                  <p className="body-small text-gray-600">Personalizada</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-3 p-3 rounded-lg bg-white/10 backdrop-blur-sm sm:col-span-2 lg:col-span-1">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg backdrop-blur-sm flex items-center justify-center bg-gray-50">
-                  <Users className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="heading-4 text-gray-900">Atendimento</h3>
-                  <p className="body-small text-gray-600">Especializado</p>
+                
+                <div className="flex items-center gap-3 p-3 sm:p-4 rounded-lg bg-white/10 backdrop-blur-sm w-full">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex-shrink-0 flex items-center justify-center bg-gray-50">
+                    <Users className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="heading-4 text-gray-900 truncate">Atendimento</h3>
+                    <p className="body-small text-gray-600 truncate">Especializado</p>
+                  </div>
                 </div>
               </div>
             </div>
           </AnimatedSection>
           
-          <AnimatedSection animation="fade-in" delay={300} className="hidden lg:block">
-            <div className="relative">
+          <AnimatedSection animation="fade-in" delay={300} className="order-1 lg:order-2">
+            <div className="relative w-full max-w-lg mx-auto lg:max-w-none">
               <div className="absolute -top-6 sm:-top-12 -left-6 sm:-left-12 w-32 sm:w-48 md:w-64 h-32 sm:h-48 md:h-64 bg-primary/10 rounded-full filter blur-3xl"></div>
               <div className="relative z-10">
                 <img 
