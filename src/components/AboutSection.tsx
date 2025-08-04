@@ -11,7 +11,7 @@ const AboutSection = () => {
         <AnimatedSection>
           <h2 className="section-title">Sobre Nós</h2>
           <p className="section-subtitle">
-            Vasta experiência em serviços contábeis e imobiliários na Região Norte do RS
+            Vasta experiência em serviços contábeis e imobiliários em toda região Sul e restante do Brasil
           </p>
         </AnimatedSection>
 
@@ -41,7 +41,7 @@ const AboutSection = () => {
               <div>
                 <h3 className="heading-4 text-white mb-4">Atuação</h3>
                 <p className="body-large text-white">
-                  Atuamos principalmente na prestação de serviços para a população dos municípios da Região Norte do Estado do Rio Grande do Sul. Nossa equipe é treinada e qualificada, contando com profissionais formados nas áreas Contábil, de Administração de Empresas, Corretor de Imóveis e Avaliador Federal de Imóveis, possuímos excelente consultoria e dispomos de diversos meios de informação sobre rotinas Contábeis, Trabalhistas e Tributárias.
+                  Atuamos principalmente na prestação de serviços para a população de toda região Sul e restante do Brasil. Nossa equipe é treinada e qualificada, contando com profissionais formados nas áreas Contábil, de Administração de Empresas, Corretor de Imóveis e Avaliador Federal de Imóveis, possuímos excelente consultoria e dispomos de diversos meios de informação sobre rotinas Contábeis, Trabalhistas e Tributárias.
                 </p>
               </div>
 
